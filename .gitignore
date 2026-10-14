@@ -1,4 +1,6 @@
 __pycache__/
 *.pyc
-*.tmp
+.pytest_cache/
 .venv/
+*.egg-info/
+07_DOCUMENTACION/fuentes/.*.html
