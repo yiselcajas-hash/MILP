@@ -1,0 +1,19 @@
+﻿id,dato_requerido,ubicacion_v2,por_que_no_se_reconstruye,solicitar_a,impacto_en_el_modelo,prioridad
+PV-01,"Tiempos de preparación y por unidad de las 96 operaciones de los 8 productos con pedido (prioridad: plegado, perforación, armado y corte)",OPERATIVA 06_RUTAS!F:G,Ningún tiempo fue cronometrado,Jefe de planta / cronometraje 15_REG_TIEMPOS,"p_om de todas las restricciones; carga de la plegadora (69 % anual, 81 % jun–ago)",P0
+PV-02,Matriz real de habilidades (25 × 16) y personas necesarias por operación,OPERATIVA 16_REG_HABILIDADES,Toda la matriz es simulada,Jefe de planta,Restricciones de personal R11–R15; conclusiones sobre rotación,P0
+PV-03,"Pedidos reales: cantidades, fechas de recepción, liberación (material) y compromiso, precio",OPERATIVA 12_REG_ENTREGAS,Los 96 pedidos son sintéticos,Ventas / planeamiento,"Todo el modelo (r_j, d_j, w_j, P_j)",P0
+PV-04,Explicar la brecha de horas-hombre: 5 742 h de proceso frente a 52 200 h disponibles,—,Requiere distribución real del tiempo del personal (directo/indirecto),Gerencia de producción,Validez de cualquier conclusión sobre dotación,P0
+PV-05,¿Se trabaja en feriados nacionales?,OPERATIVA 11_PARAMETROS aplicar_feriados,Práctica no informada,Gerencia,Calendario (261 o 249 días productivos),P1
+PV-06,"Horario real (entrada, salida, refrigerio) y si hay horas extra",OPERATIVA 08_PERSONAL; 11_PARAMETROS,Solo se confirmaron 8 h netas y 1 turno,RR. HH.,Eje de horas productivas,P1
+PV-07,"Historial de paradas de la plegadora y demás máquinas (inicio, fin, causa)",OPERATIVA 13_REG_PARADAS,Las fallas son sintéticas y el registro 21B corresponde a una roladora,Mantenimiento,"Escenarios de falla, Monte Carlo, MTBF/MTTR",P1
+PV-08,"Inventario físico de máquinas (cantidad, existencia del 2.º taladro y 2.ª estación de soldadura, sala de pintura)","OPERATIVA 05_RECURSOS!E,K",Inventario no certificado,Jefe de planta,Conjuntos M_o y capacidad,P1
+PV-09,"Capacidad simultánea de puestos manuales y áreas (armado, inspección, embalaje, preparación)",OPERATIVA 05_RECURSOS!D:E,Se modelan con capacidad 1,Jefe de planta,Restricciones disyuntivas R4–R5,P1
+PV-10,"Tamaño de lote por producto y capacidad real del horno (piezas, m² o colgadores por carga)",OPERATIVA 02_PRODUCTOS!I; 11_PARAMETROS,Lote = 10 en todo el catálogo; unidad de capacidad contradictoria,Jefe de planta,Número de preparaciones y curado,P1
+PV-11,"Espesor real de chapa de lockers (0,6 o 1,5 mm) y góndolas (0,8 o 1,0 mm)",OPERATIVA 04_DESPIECE!D,Catálogo y despiece se contradicen,Ingeniería de producto,"Masa, costo y planchas",P2
+PV-12,Unidad del precio del perfil (S/ por m o por kg) y sección real,"OPERATIVA 03_MATERIALES!D,H",Precio aplicado por kg aunque se declara por m,Compras,Costo de materiales,P2
+PV-13,Precios de 33 materiales y de bisagras/cerraduras,OPERATIVA 03_MATERIALES!H,Sin cotizaciones,Compras,Costo de materiales (no afecta al MILP),P2
+PV-14,Penalidad contractual real por atraso (si existe),OPERATIVA 01_FAMILIAS!F:G,No hay cláusula acreditada,Ventas / contratos,Objetivo f1,P1
+PV-15,¿El costo de uso por hora de máquina incluye al operario?,OPERATIVA 05_RECURSOS!F,Sin definición,Contabilidad,Costos (no afecta al MILP),P2
+PV-16,Medidas reales de los productos del catálogo con dimensiones genéricas,OPERATIVA 02_PRODUCTOS!E:G,Valores de plantilla,Ingeniería de producto,Ninguno en el MILP actual,P3
+PV-17,"Factor de tiempo en máquinas alternativas (1,10)",OPERATIVA 07_ELEGIBILIDAD!F,Sin medición,Cronometraje,p_om en alternativas,P2
+PV-18,"Reglas reales de recuperación tras avería (reanudar o reiniciar, verificación)",SIMULACION 06_RECUPERACION_SIM,Hipótesis técnica,Operador de plegadora,Tiempo restante de operaciones interrumpidas,P2

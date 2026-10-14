@@ -1,0 +1,39 @@
+== Estructura e integridad (V01–V07)
+OK V01 Claves primarias únicas y no nulas (19 tablas) — 19 tablas sin duplicados ni nulos
+OK V02 Campos obligatorios completos (según 00_DICCIONARIO) — Todos los campos marcados obligatorios tienen valor
+OK V03 Sin filas duplicadas — Ninguna hoja tiene filas idénticas
+OK V04 Tipos de dato (sin texto en campos numéricos; enteros, binarios, fechas) — Todos los valores respetan el tipo declarado en el diccionario
+OK V05 Fórmulas y unidades: recálculo independiente en Python = valores de la hoja — Área, masa, costo, planchas, precio, calendario, capacidad, jornada, plazo, fin de evento, horas por operación (= sagapi.datos.duracion_h), carga mensual y valo
+OK V06 Integridad referencial (18 relaciones + producto con pedido ⇒ ruta y despiece) — Sin códigos huérfanos
+OK V07 Consistencia de rutas, elegibilidad, dotación, calendario, pedidos, eventos y carga ≤ capacidad — Rutas correlativas con predecesor lineal; principal = ruta; ningún recurso usado con cantidad 0; 25 trabajadores; calendario continuo; fechas ordenadas; eventos
+!! V07b Alertas de realismo (no bloquean; requieren validación empresarial) — {"pedidos_ruta_excede_ventana": ["P049", "P050", "P058"], "pedidos_con_fecha_fin_de_semana": 43, "eventos_fuera_de_operacion_fifo": [], "carga_max_mensual": {"G
+== Compatibilidad con Python y parámetros MILP (V08–V09)
+OK V08 sagapi.datos.leer + validar (integridad del programa) sobre el MODELO v2.0 — 96 pedidos, 406 pasos de ruta, 17 recursos, 21 eventos, 40 escenarios
+OK V09 Parámetros del MILP idénticos al original (r_j, d_j, w_j, P_j, q, lote, p_om, M_o, ventanas de falla, calendario, recuperación, habilidades, parámetros leídos) — 96 pedidos, 1152 operaciones, 1284 tiempos p_om y 21 ventanas idénticos
+== Comparación con el original (V10)
+OK V10 Comparación con el Excel original (sin pérdida de registros ni cambios no intencionados) — {"registros_original_vs_nuevo": {"productos": [50, 50], "materiales": [41, 41], "despiece": [224, 224], "recursos": [17, 17], "rutas": [406, 406], "elegibilidad
+OK V11 Reproducibilidad: el MODELO se regenera desde las dos bases fuente sin diferencias — 58920 celdas comparadas; 0 diferencias
+== Ejecución del programa Python (original vs v2.0)
+   [original_v1_2] validar: OK (2.93s)
+   [original_v1_2] unitarias: OK (3.27s)
+   [original_v1_2] enumeracion_40: OK (5.21s)
+   [original_v1_2] rodante_S08A: OK (2.61s)
+   [original_v1_2] rodante_S13A: OK (1.8s)
+   [original_v1_2] integrar_S13A: OK (2.02s)
+   [original_v1_2] caso_S06A: OK (10.53s)
+   [modelo_v2_0] validar: OK (2.14s)
+   [modelo_v2_0] unitarias: OK (2.21s)
+   [modelo_v2_0] enumeracion_40: OK (5.32s)
+   [modelo_v2_0] rodante_S08A: OK (2.11s)
+   [modelo_v2_0] rodante_S13A: OK (1.54s)
+   [modelo_v2_0] integrar_S13A: OK (1.46s)
+   [modelo_v2_0] caso_S06A: OK (9.86s)
+OK P-validar Programa Python 1.4.0 sin cambios: validar (original y v2.0) — original rc=0 (2.93 s); v2.0 rc=0 (2.14 s); v2.0:  "fallas_con_horas_distintas": [], |  "avisos": [] | }
+OK P-unitarias Programa Python 1.4.0 sin cambios: unitarias (original y v2.0) — original rc=0 (3.27 s); v2.0 rc=0 (2.21 s); v2.0: ---------------------------------------------------------------------- | Ran 50 tests in 1.271s | OK
+OK P-enumeracion_40 Programa Python 1.4.0 sin cambios: enumeracion_40 (original y v2.0) — original rc=0 (5.21 s); v2.0 rc=0 (5.32 s); v2.0: f1 40/40  f1b 40/40  f2 40/40  violaciones 0
+OK P-rodante_S08A Programa Python 1.4.0 sin cambios: rodante_S08A (original y v2.0) — original rc=0 (2.61 s); v2.0 rc=0 (2.11 s); v2.0: 03:35:49 RODANTE AUDITORÍA: 56 reservas externas únicas; 0 errores; 11 arrastres de operaciones iniciadas. | 0
+OK P-rodante_S13A Programa Python 1.4.0 sin cambios: rodante_S13A (original y v2.0) — original rc=0 (1.8 s); v2.0 rc=0 (1.54 s); v2.0: 03:35:51 RODANTE AUDITORÍA: 54 reservas externas únicas; 0 errores; 1 arrastres de operaciones iniciadas. | 03:
+OK P-integrar_S13A Programa Python 1.4.0 sin cambios: integrar_S13A (original y v2.0) — original rc=0 (2.02 s); v2.0 rc=0 (1.46 s); v2.0: 03:35:52 ADVERTENCIA: 6 cruces fuera del horizonte protegido (comparación hipotética con FIFO externo, NO vali
+OK P-caso_S06A Programa Python 1.4.0 sin cambios: caso_S06A (original y v2.0) — original rc=0 (10.53 s); v2.0 rc=0 (9.86 s); v2.0: 03:36:02 PERSONAL EDD: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema) | 03:36:02 PERSO
+OK P-salidas Salidas idénticas original vs v2.0 (compromisos, decisiones, asignaciones, validación) — {"personal_milp_S13A_2pedidos_externos_reservados.csv": true, "cambios_S06A.csv": true, "programa_S06A.csv": true, "rodante_S13A_decisiones.csv": true, "validac
+TOTALES: {'PASA': 19, 'ALERTA': 1}

@@ -1,0 +1,8 @@
+COMANDO: /usr/bin/python3 -X utf8 Optimizacion_MILP_SAGAPI.py rodante-personal --escenario S13A --pedidos 2 --ventanas 3 --paso-rodante 8 --max-operaciones 36 --horizonte-externos 120 --tl 60.0 --salida out_S13A
+
+03:35:25 RODANTE ventana 1: 2 pedidos; 17 libres; 0 compromisos nuevos; 37 reservas; P1=1720.46
+03:35:25 RODANTE ventana 2: 2 pedidos; 17 libres; 1 compromisos nuevos; 43 reservas; P1=1720.46
+03:35:25 RODANTE ventana 3: 2 pedidos; 16 libres; 1 compromisos nuevos; 54 reservas; P1=1720.46
+03:35:25 RODANTE AUDITORÍA: 54 reservas externas únicas; 0 errores; 1 arrastres de operaciones iniciadas.
+03:35:25 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 3/3 ventanas; 2 operaciones comprometidas; cobertura anual NO validada
+03:35:25 Resultados: out_S13A/rodante_S13A_resumen.json, out_S13A/rodante_S13A_decisiones.csv, out_S13A/rodante_S13A_compromisos.csv, out_S13A/rodante_S13A_compromisos_jornadas.csv, out_S13A/rodante_S13A_reservas_externas_por_ventana.csv y out_S13A/rodante_S13A_arrastres_entre_turnos.csv

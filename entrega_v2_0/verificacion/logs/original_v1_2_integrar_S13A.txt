@@ -1,0 +1,11 @@
+COMANDO: /usr/bin/python3 -X utf8 Optimizacion_MILP_SAGAPI.py integrar-personal --escenario S13A --pedidos 2 --tl 60.0 --salida out_integrar
+
+03:35:27 RESERVAS EXTERNAS: 32 operaciones protegidas en 96 h productivas; 419 futuras quedan fuera.
+03:35:27 PILOTO CON COBERTURA S13A: 2 pedidos (iniciales=2), 17 operaciones libres, 8 operaciones fijadas, 0 externas en curso, 451 externas FUTURAS no integradas
+03:35:27 Modelo: {'variables': 274, 'restricciones': 540, 'binarias': 223, 'pares_disyuntivos': 8, 'ops_libres': 17, 'pedidos': 2, 'ventanas_futuras': 32, 'asignaciones_personal': 0, 'recursos_con_reserva': 0, 'trabajador_operacion_binarias': 67, 'trabajadores_fijos_binarias': 5, 'pares_potencial_conflicto': 18, 'personal_integrado': True, 'externas_activas_fijadas': 0, 'disyunciones_personal_externo': 78, 'operaciones_externas_congeladas': 32}
+03:35:27 P1_penalidad: Optimal, t=0.02s, objetivo=1720.4560000000001
+03:35:27 P2_tardanza: Optimal, t=0.01s, objetivo=95.78559248565124
+03:35:27 P3_estabilidad: Optimal, t=0.01s, objetivo=680.0341179999996
+03:35:27 ADVERTENCIA: 6 cruces fuera del horizonte protegido (comparación hipotética con FIFO externo, NO validación global).
+03:35:27 Asignaciones=18; trabajadores distintos=5; errores=0; certificado_ultimo_paso=True
+03:35:27 Resultados: out_integrar/personal_milp_S13A_2pedidos.csv, out_integrar/personal_milp_S13A_2pedidos_segmentos.csv, out_integrar/personal_milp_S13A_2pedidos_externos_reservados.csv y out_integrar/personal_milp_S13A_2pedidos_resumen.json

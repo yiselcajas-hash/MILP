@@ -1,0 +1,33 @@
+escenario,combinacion,familia,pedidos,atrasados,penalidad
+S00,FIFO+CONV,Racks industriales,24,3,10867.009
+S00,FIFO+CONV,Góndolas comerciales,24,22,33333.83500000001
+S00,FIFO+CONV,Lockers metálicos,24,24,25031.259
+S00,FIFO+CONV,Otros productos metalmecánicos,24,24,58061.74499999998
+S00,EDD+EDD,Racks industriales,24,22,72358.37700000002
+S00,EDD+EDD,Góndolas comerciales,24,2,3440.9120000000003
+S00,EDD+EDD,Lockers metálicos,24,0,0.0
+S00,EDD+EDD,Otros productos metalmecánicos,24,3,7431.903359999999
+S00,MILP+CONV,Racks industriales,24,8,27300.047000000006
+S00,MILP+CONV,Góndolas comerciales,24,6,8817.337000000001
+S00,MILP+CONV,Lockers metálicos,24,5,5402.43
+S00,MILP+CONV,Otros productos metalmecánicos,24,0,0.0
+S20A,FIFO+CONV,Racks industriales,24,4,14047.597000000002
+S20A,FIFO+CONV,Góndolas comerciales,24,22,33333.83500000001
+S20A,FIFO+CONV,Lockers metálicos,24,24,25031.259
+S20A,FIFO+CONV,Otros productos metalmecánicos,24,24,58061.74499999998
+S20A,FIFO+MILP,Racks industriales,24,5,17758.283
+S20A,FIFO+MILP,Góndolas comerciales,24,17,25376.72600000001
+S20A,FIFO+MILP,Lockers metálicos,24,19,19088.586000000003
+S20A,FIFO+MILP,Otros productos metalmecánicos,24,14,32746.82417999999
+S20A,EDD+EDD,Racks industriales,24,22,72358.37700000002
+S20A,EDD+EDD,Góndolas comerciales,24,1,1720.4560000000001
+S20A,EDD+EDD,Lockers metálicos,24,0,0.0
+S20A,EDD+EDD,Otros productos metalmecánicos,24,4,9986.620139999999
+S20A,MILP+CONV,Racks industriales,24,8,27300.047000000006
+S20A,MILP+CONV,Góndolas comerciales,24,9,13763.648000000001
+S20A,MILP+CONV,Lockers metálicos,24,6,6662.997
+S20A,MILP+CONV,Otros productos metalmecánicos,24,0,0.0
+S20A,MILP+MILP,Racks industriales,24,8,27300.047000000006
+S20A,MILP+MILP,Góndolas comerciales,24,6,8817.337000000001
+S20A,MILP+MILP,Lockers metálicos,24,5,5402.43
+S20A,MILP+MILP,Otros productos metalmecánicos,24,0,0.0

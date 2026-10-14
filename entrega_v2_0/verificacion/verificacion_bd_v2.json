@@ -1,0 +1,288 @@
+{
+ "meta": {
+  "fecha": "2026-10-14 03:36:02",
+  "python": "3.13.16",
+  "scipy": "1.18.1",
+  "numpy": "2.5.3",
+  "openpyxl": "3.1.5",
+  "libros": {
+   "SAGAPI_BD_OPERATIVA_v2_0.xlsx": 205274,
+   "SAGAPI_BD_SIMULACION_v2_0.xlsx": 109606,
+   "SAGAPI_BD_MODELO_v2_0.xlsx": 471042
+  }
+ },
+ "pruebas": [
+  {
+   "codigo": "V01",
+   "prueba": "Claves primarias únicas y no nulas (19 tablas)",
+   "resultado": "PASA",
+   "detalle": "19 tablas sin duplicados ni nulos",
+   "casos": 3296
+  },
+  {
+   "codigo": "V02",
+   "prueba": "Campos obligatorios completos (según 00_DICCIONARIO)",
+   "resultado": "PASA",
+   "detalle": "Todos los campos marcados obligatorios tienen valor",
+   "casos": null
+  },
+  {
+   "codigo": "V03",
+   "prueba": "Sin filas duplicadas",
+   "resultado": "PASA",
+   "detalle": "Ninguna hoja tiene filas idénticas",
+   "casos": null
+  },
+  {
+   "codigo": "V04",
+   "prueba": "Tipos de dato (sin texto en campos numéricos; enteros, binarios, fechas)",
+   "resultado": "PASA",
+   "detalle": "Todos los valores respetan el tipo declarado en el diccionario",
+   "casos": null
+  },
+  {
+   "codigo": "V05",
+   "prueba": "Fórmulas y unidades: recálculo independiente en Python = valores de la hoja",
+   "resultado": "PASA",
+   "detalle": "Área, masa, costo, planchas, precio, calendario, capacidad, jornada, plazo, fin de evento, horas por operación (= sagapi.datos.duracion_h), carga mensual y valor/penalidad coinciden (tol. 1e-6)",
+   "casos": null
+  },
+  {
+   "codigo": "V06",
+   "prueba": "Integridad referencial (18 relaciones + producto con pedido ⇒ ruta y despiece)",
+   "resultado": "PASA",
+   "detalle": "Sin códigos huérfanos",
+   "casos": null
+  },
+  {
+   "codigo": "V07",
+   "prueba": "Consistencia de rutas, elegibilidad, dotación, calendario, pedidos, eventos y carga ≤ capacidad",
+   "resultado": "PASA",
+   "detalle": "Rutas correlativas con predecesor lineal; principal = ruta; ningún recurso usado con cantidad 0; 25 trabajadores; calendario continuo; fechas ordenadas; eventos dentro del calendario y sin solapes por escenario; carga ≤ capacidad en los 204 recurso-mes",
+   "casos": null
+  },
+  {
+   "codigo": "V07b",
+   "prueba": "Alertas de realismo (no bloquean; requieren validación empresarial)",
+   "resultado": "ALERTA",
+   "detalle": "{\"pedidos_ruta_excede_ventana\": [\"P049\", \"P050\", \"P058\"], \"pedidos_con_fecha_fin_de_semana\": 43, \"eventos_fuera_de_operacion_fifo\": [], \"carga_max_mensual\": {\"Guillotina hidráulica para corte de planchas de acero\": 0.371, \"Sierra de cinta para corte de tubos y perfiles\": 0.183, \"Taladro de banco para perforación de acero\": 0.437, \"Plegadora hidráulica de chapa metálica\": 0.81, \"Máquina de soldadura por arco MIG/MAG\": 0.219, \"Mesa de desbarbado/esmerilado\": 0.284, \"Zona de preparación superficial\": 0.245, \"Pistola manual de pintura electrostática en polvo\": 0.072, \"Mesa de armado\": 0.434, \"Área de inspección\": 0.031, \"Zona de protección y embalaje\": 0.042, \"Horno de curado de pintura electrostática por lotes\": 0.054, \"Manipulación y enfriamiento de piezas\": 0.03}}",
+   "casos": null
+  },
+  {
+   "codigo": "V08",
+   "prueba": "sagapi.datos.leer + validar (integridad del programa) sobre el MODELO v2.0",
+   "resultado": "PASA",
+   "detalle": "96 pedidos, 406 pasos de ruta, 17 recursos, 21 eventos, 40 escenarios",
+   "casos": null
+  },
+  {
+   "codigo": "V09",
+   "prueba": "Parámetros del MILP idénticos al original (r_j, d_j, w_j, P_j, q, lote, p_om, M_o, ventanas de falla, calendario, recuperación, habilidades, parámetros leídos)",
+   "resultado": "PASA",
+   "detalle": "96 pedidos, 1152 operaciones, 1284 tiempos p_om y 21 ventanas idénticos",
+   "casos": 1284
+  },
+  {
+   "codigo": "V10",
+   "prueba": "Comparación con el Excel original (sin pérdida de registros ni cambios no intencionados)",
+   "resultado": "PASA",
+   "detalle": "{\"registros_original_vs_nuevo\": {\"productos\": [50, 50], \"materiales\": [41, 41], \"despiece\": [224, 224], \"recursos\": [17, 17], \"rutas\": [406, 406], \"elegibilidad\": [473, 473], \"operarios\": [25, 25], \"calendario\": [396, 396], \"pedidos\": [96, 96], \"eventos\": [21, 21], \"escenarios\": [40, 40], \"recuperacion\": [62, 62], \"programa_fifo\": [1152, 1152], \"habilidades\": [25, 25]}, \"perdidas\": {}, \"cambios_intencionados\": {\"texto de relleno eliminado en Ancho pieza mm\": 157, \"texto de relleno eliminado en Alto pieza mm\": 157, \"planchas corregidas (× piezas por unidad)\": 70, \"costo de herraje calculado (antes vacío)\": 53, \"texto de relleno eliminado en Longitud pieza m\": 123}, \"no_intencionados\": []}",
+   "casos": null
+  },
+  {
+   "codigo": "V11",
+   "prueba": "Reproducibilidad: el MODELO se regenera desde las dos bases fuente sin diferencias",
+   "resultado": "PASA",
+   "detalle": "58920 celdas comparadas; 0 diferencias",
+   "casos": null
+  },
+  {
+   "codigo": "P-validar",
+   "prueba": "Programa Python 1.4.0 sin cambios: validar (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (2.93 s); v2.0 rc=0 (2.14 s); v2.0:  \"fallas_con_horas_distintas\": [], |  \"avisos\": [] | }",
+   "casos": null
+  },
+  {
+   "codigo": "P-unitarias",
+   "prueba": "Programa Python 1.4.0 sin cambios: unitarias (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (3.27 s); v2.0 rc=0 (2.21 s); v2.0: ---------------------------------------------------------------------- | Ran 50 tests in 1.271s | OK",
+   "casos": null
+  },
+  {
+   "codigo": "P-enumeracion_40",
+   "prueba": "Programa Python 1.4.0 sin cambios: enumeracion_40 (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (5.21 s); v2.0 rc=0 (5.32 s); v2.0: f1 40/40  f1b 40/40  f2 40/40  violaciones 0",
+   "casos": null
+  },
+  {
+   "codigo": "P-rodante_S08A",
+   "prueba": "Programa Python 1.4.0 sin cambios: rodante_S08A (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (2.61 s); v2.0 rc=0 (2.11 s); v2.0: 03:35:49 RODANTE AUDITORÍA: 56 reservas externas únicas; 0 errores; 11 arrastres de operaciones iniciadas. | 03:35:49 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 5/5 ventanas; 23 operaciones comprometidas; cobertura anual NO validada | 03:35:49 Resultados: out_S08A/rodante_S08A_resumen.json, ou",
+   "casos": null
+  },
+  {
+   "codigo": "P-rodante_S13A",
+   "prueba": "Programa Python 1.4.0 sin cambios: rodante_S13A (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (1.8 s); v2.0 rc=0 (1.54 s); v2.0: 03:35:51 RODANTE AUDITORÍA: 54 reservas externas únicas; 0 errores; 1 arrastres de operaciones iniciadas. | 03:35:51 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 3/3 ventanas; 2 operaciones comprometidas; cobertura anual NO validada | 03:35:51 Resultados: out_S13A/rodante_S13A_resumen.json, out_",
+   "casos": null
+  },
+  {
+   "codigo": "P-integrar_S13A",
+   "prueba": "Programa Python 1.4.0 sin cambios: integrar_S13A (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (2.02 s); v2.0 rc=0 (1.46 s); v2.0: 03:35:52 ADVERTENCIA: 6 cruces fuera del horizonte protegido (comparación hipotética con FIFO externo, NO validación global). | 03:35:52 Asignaciones=18; trabajadores distintos=5; errores=0; certificado_ultimo_paso=True | 03:35:52 Resultados: out_integrar/personal_milp_S13A_2pedidos.csv, out_integra",
+   "casos": null
+  },
+  {
+   "codigo": "P-caso_S06A",
+   "prueba": "Programa Python 1.4.0 sin cambios: caso_S06A (original y v2.0)",
+   "resultado": "PASA",
+   "detalle": "original rc=0 (10.53 s); v2.0 rc=0 (9.86 s); v2.0: 03:36:02 PERSONAL EDD: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema) | 03:36:02 PERSONAL MILP-MONO: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema) | 03:36:02 PERSONAL MILP-LEX: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)",
+   "casos": null
+  },
+  {
+   "codigo": "P-salidas",
+   "prueba": "Salidas idénticas original vs v2.0 (compromisos, decisiones, asignaciones, validación)",
+   "resultado": "PASA",
+   "detalle": "{\"personal_milp_S13A_2pedidos_externos_reservados.csv\": true, \"cambios_S06A.csv\": true, \"programa_S06A.csv\": true, \"rodante_S13A_decisiones.csv\": true, \"validacion_datos.json\": true, \"personal_milp_S13A_2pedidos.csv\": true, \"rodante_S08A_compromisos.csv\": true, \"rodante_S13A_compromisos.csv\": true, \"rodante_S08A_decisiones.csv\": true}",
+   "casos": null
+  }
+ ],
+ "pasos_python": {
+  "original_v1_2": {
+   "validar": {
+    "codigo_salida": 0,
+    "segundos": 2.93,
+    "resumen": [
+     " \"fallas_con_horas_distintas\": [],",
+     " \"avisos\": []",
+     "}"
+    ]
+   },
+   "unitarias": {
+    "codigo_salida": 0,
+    "segundos": 3.27,
+    "resumen": [
+     "----------------------------------------------------------------------",
+     "Ran 50 tests in 2.445s",
+     "OK"
+    ]
+   },
+   "enumeracion_40": {
+    "codigo_salida": 0,
+    "segundos": 5.21,
+    "resumen": [
+     "f1 40/40  f1b 40/40  f2 40/40  violaciones 0"
+    ]
+   },
+   "rodante_S08A": {
+    "codigo_salida": 0,
+    "segundos": 2.61,
+    "resumen": [
+     "03:35:23 RODANTE AUDITORÍA: 56 reservas externas únicas; 0 errores; 11 arrastres de operaciones iniciadas.",
+     "03:35:23 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 5/5 ventanas; 23 operaciones comprometidas; cobertura anual NO validada",
+     "03:35:23 Resultados: out_S08A/rodante_S08A_resumen.json, out_S08A/rodante_S08A_decisiones.csv, out_S08A/rodante_S08A_compromisos.csv, out_S08A/rodante_S08A_compromisos_jornadas.csv, out_S08A/rodante_S08A_reservas_externas_por_ventana.csv y out_S08A/rodante_S08A_arrastres_entre_turnos.csv"
+    ]
+   },
+   "rodante_S13A": {
+    "codigo_salida": 0,
+    "segundos": 1.8,
+    "resumen": [
+     "03:35:25 RODANTE AUDITORÍA: 54 reservas externas únicas; 0 errores; 1 arrastres de operaciones iniciadas.",
+     "03:35:25 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 3/3 ventanas; 2 operaciones comprometidas; cobertura anual NO validada",
+     "03:35:25 Resultados: out_S13A/rodante_S13A_resumen.json, out_S13A/rodante_S13A_decisiones.csv, out_S13A/rodante_S13A_compromisos.csv, out_S13A/rodante_S13A_compromisos_jornadas.csv, out_S13A/rodante_S13A_reservas_externas_por_ventana.csv y out_S13A/rodante_S13A_arrastres_entre_turnos.csv"
+    ]
+   },
+   "integrar_S13A": {
+    "codigo_salida": 0,
+    "segundos": 2.02,
+    "resumen": [
+     "03:35:27 ADVERTENCIA: 6 cruces fuera del horizonte protegido (comparación hipotética con FIFO externo, NO validación global).",
+     "03:35:27 Asignaciones=18; trabajadores distintos=5; errores=0; certificado_ultimo_paso=True",
+     "03:35:27 Resultados: out_integrar/personal_milp_S13A_2pedidos.csv, out_integrar/personal_milp_S13A_2pedidos_segmentos.csv, out_integrar/personal_milp_S13A_2pedidos_externos_reservados.csv y out_integrar/personal_milp_S13A_2pedidos_resumen.json"
+    ]
+   },
+   "caso_S06A": {
+    "codigo_salida": 0,
+    "segundos": 10.53,
+    "resumen": [
+     "03:35:37 PERSONAL EDD: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)",
+     "03:35:37 PERSONAL MILP-MONO: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)",
+     "03:35:37 PERSONAL MILP-LEX: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)"
+    ]
+   }
+  },
+  "modelo_v2_0": {
+   "validar": {
+    "codigo_salida": 0,
+    "segundos": 2.14,
+    "resumen": [
+     " \"fallas_con_horas_distintas\": [],",
+     " \"avisos\": []",
+     "}"
+    ]
+   },
+   "unitarias": {
+    "codigo_salida": 0,
+    "segundos": 2.21,
+    "resumen": [
+     "----------------------------------------------------------------------",
+     "Ran 50 tests in 1.271s",
+     "OK"
+    ]
+   },
+   "enumeracion_40": {
+    "codigo_salida": 0,
+    "segundos": 5.32,
+    "resumen": [
+     "f1 40/40  f1b 40/40  f2 40/40  violaciones 0"
+    ]
+   },
+   "rodante_S08A": {
+    "codigo_salida": 0,
+    "segundos": 2.11,
+    "resumen": [
+     "03:35:49 RODANTE AUDITORÍA: 56 reservas externas únicas; 0 errores; 11 arrastres de operaciones iniciadas.",
+     "03:35:49 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 5/5 ventanas; 23 operaciones comprometidas; cobertura anual NO validada",
+     "03:35:49 Resultados: out_S08A/rodante_S08A_resumen.json, out_S08A/rodante_S08A_decisiones.csv, out_S08A/rodante_S08A_compromisos.csv, out_S08A/rodante_S08A_compromisos_jornadas.csv, out_S08A/rodante_S08A_reservas_externas_por_ventana.csv y out_S08A/rodante_S08A_arrastres_entre_turnos.csv"
+    ]
+   },
+   "rodante_S13A": {
+    "codigo_salida": 0,
+    "segundos": 1.54,
+    "resumen": [
+     "03:35:51 RODANTE AUDITORÍA: 54 reservas externas únicas; 0 errores; 1 arrastres de operaciones iniciadas.",
+     "03:35:51 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 3/3 ventanas; 2 operaciones comprometidas; cobertura anual NO validada",
+     "03:35:51 Resultados: out_S13A/rodante_S13A_resumen.json, out_S13A/rodante_S13A_decisiones.csv, out_S13A/rodante_S13A_compromisos.csv, out_S13A/rodante_S13A_compromisos_jornadas.csv, out_S13A/rodante_S13A_reservas_externas_por_ventana.csv y out_S13A/rodante_S13A_arrastres_entre_turnos.csv"
+    ]
+   },
+   "integrar_S13A": {
+    "codigo_salida": 0,
+    "segundos": 1.46,
+    "resumen": [
+     "03:35:52 ADVERTENCIA: 6 cruces fuera del horizonte protegido (comparación hipotética con FIFO externo, NO validación global).",
+     "03:35:52 Asignaciones=18; trabajadores distintos=5; errores=0; certificado_ultimo_paso=True",
+     "03:35:52 Resultados: out_integrar/personal_milp_S13A_2pedidos.csv, out_integrar/personal_milp_S13A_2pedidos_segmentos.csv, out_integrar/personal_milp_S13A_2pedidos_externos_reservados.csv y out_integrar/personal_milp_S13A_2pedidos_resumen.json"
+    ]
+   },
+   "caso_S06A": {
+    "codigo_salida": 0,
+    "segundos": 9.86,
+    "resumen": [
+     "03:36:02 PERSONAL EDD: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)",
+     "03:36:02 PERSONAL MILP-MONO: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)",
+     "03:36:02 PERSONAL MILP-LEX: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)"
+    ]
+   }
+  }
+ },
+ "totales": {
+  "PASA": 19,
+  "ALERTA": 1
+ }
+}

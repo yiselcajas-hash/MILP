@@ -1,0 +1,73 @@
+{
+ "milp_monolitico_96": {
+  "variables": 55248,
+  "restricciones": 117940,
+  "binarias": 54000,
+  "pares_disyuntivos": 52560,
+  "ops_libres": 1152,
+  "pedidos": 96,
+  "ventanas_futuras": 0,
+  "asignaciones_personal": 60,
+  "recursos_con_reserva": 15,
+  "seg_construccion": 0.4
+ },
+ "R11_efecto_en_f1_S06A": {
+  "reservar_personal=True": {
+   "f1": 9066.34478,
+   "estado": "Optimal",
+   "filas_R11": 40,
+   "binarias": 342
+  },
+  "reservar_personal=False": {
+   "f1": 9066.34478,
+   "estado": "Optimal",
+   "filas_R11": 0,
+   "binarias": 282
+  }
+ },
+ "R11_variables_de_programacion_en_sus_filas": 0,
+ "S06A_lex_cruces_con_pedidos_futuros_FIFO": {
+  "cruces": 0,
+  "horas": 0.0,
+  "pedidos_instancia": 8,
+  "pedidos_futuros_ignorados": 32
+ },
+ "S06A_conv_vs_lex": {
+  "CONV": {
+   "atrasados": 7.0,
+   "penalidad": 14834.33,
+   "tardanza_h": 215.41,
+   "tard_pond": 205.55,
+   "D": 35.07,
+   "R": 0
+  },
+  "EDD": {
+   "atrasados": 6.0,
+   "penalidad": 15298.95,
+   "tardanza_h": 139.4,
+   "tard_pond": 196.6,
+   "D": 1853.61,
+   "R": 1
+  },
+  "LEX": {
+   "atrasados": 4.0,
+   "penalidad": 9066.34,
+   "tardanza_h": 200.3,
+   "tard_pond": 249.18,
+   "D": 2031.47,
+   "R": 1
+  }
+ },
+ "curado_por_lote_que_cruza_el_cierre_de_jornada_FIFO": {
+  "partidos": 10,
+  "total": 96
+ },
+ "operaciones_FIFO_que_continuan_al_dia_siguiente": {
+  "n": 505,
+  "total": 1152
+ },
+ "R6_ventanas_con_inicio_menor_que_pmax": 0,
+ "pmax_h": 26.33,
+ "horas_proceso_anuales": 5741.7,
+ "horas_hombre_disponibles_25x8x261": 52200
+}

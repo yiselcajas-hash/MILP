@@ -1,0 +1,12 @@
+03:36:12 E1 S00 FIFO+CONV: atrasados=73 penalidad=127294 t=0s
+03:36:12 E1 S00 EDD+EDD: atrasados=27 penalidad=83231 t=0s
+03:36:23 E1 S00 MILP+CONV: atrasados=19 penalidad=41520 t=12s
+03:36:23 E1 S20A FIFO+CONV: atrasados=74 penalidad=130474 t=0s
+03:36:46 E1 S20A FIFO+MILP: atrasados=55 penalidad=94970 t=23s
+03:36:46 E1 S20A EDD+EDD: atrasados=27 penalidad=84065 t=0s
+03:36:56 E1 S20A MILP+CONV: atrasados=23 penalidad=47727 t=10s
+03:37:11 E1 S20A MILP+MILP: atrasados=19 penalidad=41520 t=15s
+
+real	1m0.679s
+user	1m13.204s
+sys	0m0.989s

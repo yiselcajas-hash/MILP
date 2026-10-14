@@ -1,0 +1,10 @@
+COMANDO: /usr/bin/python3 -X utf8 Optimizacion_MILP_SAGAPI.py caso --escenario S06A --tl 60.0 --salida out_caso
+
+03:36:01 CONV       atrasados=7/8 penalidad=S/14,834 tard.pond=205.6 D=35.1 R=0 estado=REGLA viol=0
+03:36:01 EDD        atrasados=6/8 penalidad=S/15,299 tard.pond=196.6 D=1853.6 R=1 estado=REGLA viol=0
+03:36:01 MILP-MONO  atrasados=4/8 penalidad=S/9,066 tard.pond=249.2 D=2417.1 R=2 estado=ÓPTIMO viol=0
+03:36:01 MILP-LEX   atrasados=4/8 penalidad=S/9,066 tard.pond=249.2 D=2031.5 R=1 estado=ÓPTIMO viol=0
+03:36:02 PERSONAL CONV: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)
+03:36:02 PERSONAL EDD: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)
+03:36:02 PERSONAL MILP-MONO: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)
+03:36:02 PERSONAL MILP-LEX: 0 intervalos en conflicto; 0.000 horas (solo pedidos del subproblema)
