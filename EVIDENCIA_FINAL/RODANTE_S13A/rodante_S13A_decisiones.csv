@@ -1,0 +1,51 @@
+﻿ventana,operacion_id,pedido,maquina,trabajador_simulado,inicio_h,fin_h,comprometida_en_esta_ventana
+1,677,P057,Mesa de desbarbado/esmerilado,OP-05,1286.210334,1295.4103340000001,False
+1,678,P057,Zona de preparación superficial,OP-07,1295.4103340000001,1302.050707,False
+1,679,P057,Pistola manual de pintura electrostática en polvo,OP-08,1302.050707,1304.188374,False
+1,680,P057,Horno de curado de pintura electrostática por lotes,OP-15,1304.188374,1305.688374,False
+1,681,P057,Manipulación y enfriamiento de piezas,OP-15,1305.688374,1306.537874,False
+1,682,P057,Mesa de armado,OP-09,1306.537874,1319.7378740000001,False
+1,683,P057,Área de inspección,OP-09,1319.7378740000001,1320.6408740000002,False
+1,684,P057,Zona de protección y embalaje,OP-09,1320.6408740000002,1321.855874,False
+1,701,P059,Plegadora hidráulica de chapa metálica,OP-04,1395.5296660000001,1418.5629990000002,False
+1,702,P059,Mesa de desbarbado/esmerilado,OP-05,1418.5629990000002,1425.4129990000001,False
+1,703,P059,Zona de preparación superficial,OP-07,1425.4129990000001,1430.9150260000001,False
+1,704,P059,Pistola manual de pintura electrostática en polvo,OP-07,1430.9150260000001,1432.149693,False
+1,705,P059,Horno de curado de pintura electrostática por lotes,OP-15,1432.149693,1432.899693,False
+1,706,P059,Manipulación y enfriamiento de piezas,OP-15,1432.899693,1433.383693,False
+1,707,P059,Mesa de armado,OP-09,1433.383693,1442.683693,False
+1,708,P059,Área de inspección,OP-09,1442.683693,1443.22236,False
+1,709,P059,Zona de protección y embalaje,OP-09,1443.22236,1443.94636,False
+2,677,P057,Mesa de desbarbado/esmerilado,OP-05,1286.210334,1295.4103340000001,True
+2,678,P057,Zona de preparación superficial,OP-07,1295.4103340000001,1302.050707,False
+2,679,P057,Pistola manual de pintura electrostática en polvo,OP-08,1302.050707,1304.188374,False
+2,680,P057,Horno de curado de pintura electrostática por lotes,OP-15,1304.188374,1305.688374,False
+2,681,P057,Manipulación y enfriamiento de piezas,OP-15,1305.688374,1306.537874,False
+2,682,P057,Mesa de armado,OP-09,1306.537874,1319.7378740000001,False
+2,683,P057,Área de inspección,OP-09,1319.7378740000001,1320.6408740000002,False
+2,684,P057,Zona de protección y embalaje,OP-09,1320.6408740000002,1321.855874,False
+2,701,P059,Plegadora hidráulica de chapa metálica,OP-04,1412.9296660000002,1439.2629990000003,False
+2,702,P059,Mesa de desbarbado/esmerilado,OP-05,1439.2629990000003,1446.1129990000002,False
+2,703,P059,Zona de preparación superficial,OP-07,1446.1129990000002,1451.6150260000002,False
+2,704,P059,Pistola manual de pintura electrostática en polvo,OP-07,1451.6150260000002,1452.8496930000001,False
+2,705,P059,Horno de curado de pintura electrostática por lotes,OP-15,1452.8496930000001,1453.5996930000001,False
+2,706,P059,Manipulación y enfriamiento de piezas,OP-15,1453.5996930000001,1454.083693,False
+2,707,P059,Mesa de armado,OP-09,1454.083693,1463.383693,False
+2,708,P059,Área de inspección,OP-09,1463.383693,1463.92236,False
+2,709,P059,Zona de protección y embalaje,OP-09,1463.92236,1464.64636,False
+3,678,P057,Zona de preparación superficial,OP-07,1295.4103340000001,1302.050707,True
+3,679,P057,Pistola manual de pintura electrostática en polvo,OP-08,1302.050707,1304.188374,False
+3,680,P057,Horno de curado de pintura electrostática por lotes,OP-15,1304.188374,1305.688374,False
+3,681,P057,Manipulación y enfriamiento de piezas,OP-15,1305.688374,1306.537874,False
+3,682,P057,Mesa de armado,OP-09,1306.537874,1319.7378740000001,False
+3,683,P057,Área de inspección,OP-09,1319.7378740000001,1320.6408740000002,False
+3,684,P057,Zona de protección y embalaje,OP-09,1320.6408740000002,1321.855874,False
+3,701,P059,Plegadora hidráulica de chapa metálica,OP-04,1412.9296660000002,1439.2629990000003,False
+3,702,P059,Mesa de desbarbado/esmerilado,OP-05,1439.2629990000003,1446.1129990000002,False
+3,703,P059,Zona de preparación superficial,OP-07,1446.1129990000002,1451.6150260000002,False
+3,704,P059,Pistola manual de pintura electrostática en polvo,OP-07,1451.6150260000002,1452.8496930000001,False
+3,705,P059,Horno de curado de pintura electrostática por lotes,OP-15,1452.8496930000001,1453.5996930000001,False
+3,706,P059,Manipulación y enfriamiento de piezas,OP-15,1453.5996930000001,1454.083693,False
+3,707,P059,Mesa de armado,OP-09,1454.083693,1463.383693,False
+3,708,P059,Área de inspección,OP-09,1463.383693,1463.92236,False
+3,709,P059,Zona de protección y embalaje,OP-09,1463.92236,1464.64636,False

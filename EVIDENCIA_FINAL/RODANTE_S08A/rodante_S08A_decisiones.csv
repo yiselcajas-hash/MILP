@@ -1,0 +1,104 @@
+﻿ventana,operacion_id,pedido,maquina,trabajador_simulado,inicio_h,fin_h,comprometida_en_esta_ventana
+1,776,P065,Horno de curado de pintura electrostática por lotes,OP-15,1474.1969600000002,1475.6969600000002,True
+1,777,P065,Manipulación y enfriamiento de piezas,OP-15,1475.6969600000002,1476.5016270000003,True
+1,778,P065,Mesa de armado,OP-10,1476.5016270000003,1488.7016270000004,True
+1,779,P065,Área de inspección,OP-09,1488.7016270000004,1489.5402940000004,False
+1,780,P065,Zona de protección y embalaje,OP-11,1489.5402940000004,1490.6669610000004,False
+1,782,P066,Sierra de cinta para corte de tubos y perfiles,OP-21,1479.600667,1490.267334,True
+1,783,P066,Taladro de banco para perforación de acero,OP-12,1490.267334,1507.020667,False
+1,784,P066,Plegadora hidráulica de chapa metálica,OP-04,1507.0206669999998,1521.2206669999998,False
+1,785,P066,Máquina de soldadura por arco MIG/MAG,OP-05,1521.2206669999998,1537.234,False
+1,786,P066,Mesa de desbarbado/esmerilado,OP-06,1537.234,1547.234,False
+1,787,P066,Zona de preparación superficial,OP-07,1547.234,1553.8468,False
+1,788,P066,Pistola manual de pintura electrostática en polvo,OP-08,1553.8468,1555.8508,False
+1,789,P066,Horno de curado de pintura electrostática por lotes,OP-15,1555.8508,1557.3508,False
+1,790,P066,Manipulación y enfriamiento de piezas,OP-15,1557.3508,1558.155467,False
+1,791,P066,Mesa de armado,OP-09,1558.155467,1570.8054670000001,False
+1,792,P066,Área de inspección,OP-11,1570.8054670000001,1571.6441340000001,False
+1,793,P066,Zona de protección y embalaje,OP-11,1571.6441340000001,1572.7708010000001,False
+1,800,P067,Pistola manual de pintura electrostática en polvo,OP-08,1476.3444800000002,1477.3204800000003,True
+1,801,P067,Horno de curado de pintura electrostática por lotes,OP-14,1477.3204800000003,1478.0704800000003,True
+1,802,P067,Manipulación y enfriamiento de piezas,OP-14,1478.0704800000003,1478.4668130000002,True
+1,803,P067,Mesa de armado,OP-10,1488.7016270000006,1495.7016270000006,False
+1,804,P067,Área de inspección,OP-23,1495.7016270000006,1496.1139600000006,False
+1,805,P067,Zona de protección y embalaje,OP-23,1496.1139600000006,1496.6652930000007,False
+1,843,P071,Plegadora hidráulica de chapa metálica,OP-04,1476.5,1489.566667,True
+1,844,P071,Mesa de desbarbado/esmerilado,OP-05,1489.566667,1492.116667,False
+1,845,P071,Zona de preparación superficial,OP-07,1492.116667,1496.502,False
+1,846,P071,Pistola manual de pintura electrostática en polvo,OP-07,1496.502,1497.798667,False
+1,847,P071,Horno de curado de pintura electrostática por lotes,OP-15,1497.798667,1498.548667,False
+1,848,P071,Manipulación y enfriamiento de piezas,OP-15,1498.548667,1499.075334,False
+1,849,P071,Mesa de armado,OP-10,1499.3016270000003,1503.9016270000002,False
+1,850,P071,Área de inspección,OP-24,1503.9016270000002,1504.50996,False
+1,851,P071,Zona de protección y embalaje,OP-09,1504.50996,1505.321627,False
+2,779,P065,Área de inspección,OP-09,1488.7016270000004,1489.5402940000004,True
+2,780,P065,Zona de protección y embalaje,OP-11,1489.5402940000004,1490.6669610000004,False
+2,783,P066,Taladro de banco para perforación de acero,OP-12,1490.267334,1507.020667,False
+2,784,P066,Plegadora hidráulica de chapa metálica,OP-17,1507.0206669999998,1521.2206669999998,False
+2,785,P066,Máquina de soldadura por arco MIG/MAG,OP-05,1521.2206669999998,1537.234,False
+2,786,P066,Mesa de desbarbado/esmerilado,OP-06,1537.234,1547.234,False
+2,787,P066,Zona de preparación superficial,OP-07,1547.234,1553.8468,False
+2,788,P066,Pistola manual de pintura electrostática en polvo,OP-08,1553.8468,1555.8508,False
+2,789,P066,Horno de curado de pintura electrostática por lotes,OP-15,1555.8508,1557.3508,False
+2,790,P066,Manipulación y enfriamiento de piezas,OP-15,1557.3508,1558.155467,False
+2,791,P066,Mesa de armado,OP-09,1558.155467,1570.8054670000001,False
+2,792,P066,Área de inspección,OP-11,1570.8054670000001,1571.6441340000001,False
+2,793,P066,Zona de protección y embalaje,OP-11,1571.6441340000001,1572.7708010000001,False
+2,803,P067,Mesa de armado,OP-23,1488.7016270000004,1495.7016270000004,True
+2,804,P067,Área de inspección,OP-23,1495.7016270000004,1496.1139600000004,False
+2,805,P067,Zona de protección y embalaje,OP-11,1496.1139600000004,1496.6652930000005,False
+2,844,P071,Mesa de desbarbado/esmerilado,OP-05,1489.566667,1492.116667,False
+2,845,P071,Zona de preparación superficial,OP-07,1492.116667,1496.502,False
+2,846,P071,Pistola manual de pintura electrostática en polvo,OP-07,1496.502,1497.798667,False
+2,847,P071,Horno de curado de pintura electrostática por lotes,OP-15,1497.798667,1498.548667,False
+2,848,P071,Manipulación y enfriamiento de piezas,OP-15,1498.548667,1499.075334,False
+2,849,P071,Mesa de armado,OP-23,1499.3016270000003,1503.9016270000002,False
+2,850,P071,Área de inspección,OP-23,1503.9016270000002,1504.50996,False
+2,851,P071,Zona de protección y embalaje,OP-09,1504.50996,1505.321627,False
+3,780,P065,Zona de protección y embalaje,OP-10,1489.5402940000004,1490.6669610000004,True
+3,783,P066,Taladro de banco para perforación de acero,OP-12,1490.267334,1507.020667,True
+3,784,P066,Plegadora hidráulica de chapa metálica,OP-17,1507.0206669999998,1521.2206669999998,False
+3,785,P066,Máquina de soldadura por arco MIG/MAG,OP-05,1521.2206669999998,1537.234,False
+3,786,P066,Mesa de desbarbado/esmerilado,OP-06,1537.234,1547.234,False
+3,787,P066,Zona de preparación superficial,OP-07,1547.234,1553.8468,False
+3,788,P066,Pistola manual de pintura electrostática en polvo,OP-08,1553.8468,1555.8508,False
+3,789,P066,Horno de curado de pintura electrostática por lotes,OP-15,1555.8508,1557.3508,False
+3,790,P066,Manipulación y enfriamiento de piezas,OP-15,1557.3508,1558.155467,False
+3,791,P066,Mesa de armado,OP-09,1558.155467,1570.8054670000001,False
+3,792,P066,Área de inspección,OP-11,1570.8054670000001,1571.6441340000001,False
+3,793,P066,Zona de protección y embalaje,OP-11,1571.6441340000001,1572.7708010000001,False
+3,804,P067,Área de inspección,OP-23,1495.7016270000004,1496.1139600000004,True
+3,805,P067,Zona de protección y embalaje,OP-11,1496.1139600000004,1496.6652930000005,True
+3,844,P071,Mesa de desbarbado/esmerilado,OP-05,1489.566667,1492.116667,True
+3,845,P071,Zona de preparación superficial,OP-07,1492.116667,1496.502,True
+3,846,P071,Pistola manual de pintura electrostática en polvo,OP-07,1496.502,1497.798667,True
+3,847,P071,Horno de curado de pintura electrostática por lotes,OP-15,1497.798667,1498.548667,False
+3,848,P071,Manipulación y enfriamiento de piezas,OP-15,1498.548667,1499.075334,False
+3,849,P071,Mesa de armado,OP-23,1499.3016270000003,1503.9016270000002,False
+3,850,P071,Área de inspección,OP-23,1503.9016270000002,1504.50996,False
+3,851,P071,Zona de protección y embalaje,OP-09,1504.50996,1505.321627,False
+4,784,P066,Plegadora hidráulica de chapa metálica,OP-17,1507.020667,1521.220667,False
+4,785,P066,Máquina de soldadura por arco MIG/MAG,OP-06,1521.220667,1537.2340000000002,False
+4,786,P066,Mesa de desbarbado/esmerilado,OP-06,1537.234,1547.234,False
+4,787,P066,Zona de preparación superficial,OP-16,1547.234,1553.8468,False
+4,788,P066,Pistola manual de pintura electrostática en polvo,OP-16,1553.8468,1555.8508,False
+4,789,P066,Horno de curado de pintura electrostática por lotes,OP-15,1555.8508,1557.3508,False
+4,790,P066,Manipulación y enfriamiento de piezas,OP-15,1557.3508,1558.155467,False
+4,791,P066,Mesa de armado,OP-09,1558.155467,1570.8054670000001,False
+4,792,P066,Área de inspección,OP-11,1570.8054670000001,1571.6441340000001,False
+4,793,P066,Zona de protección y embalaje,OP-11,1571.6441340000001,1572.7708010000001,False
+4,847,P071,Horno de curado de pintura electrostática por lotes,OP-15,1497.798667,1498.548667,True
+4,848,P071,Manipulación y enfriamiento de piezas,OP-15,1498.548667,1499.075334,True
+4,849,P071,Mesa de armado,OP-10,1499.3016270000003,1503.9016270000002,True
+4,850,P071,Área de inspección,OP-09,1503.9016270000002,1504.50996,True
+4,851,P071,Zona de protección y embalaje,OP-09,1504.5099600000003,1505.3216270000003,True
+5,784,P066,Plegadora hidráulica de chapa metálica,OP-17,1507.020667,1521.220667,True
+5,785,P066,Máquina de soldadura por arco MIG/MAG,OP-06,1521.220667,1537.2340000000002,False
+5,786,P066,Mesa de desbarbado/esmerilado,OP-06,1537.2340000000002,1547.2340000000002,False
+5,787,P066,Zona de preparación superficial,OP-16,1547.234,1553.8468,False
+5,788,P066,Pistola manual de pintura electrostática en polvo,OP-16,1553.8468,1555.8508,False
+5,789,P066,Horno de curado de pintura electrostática por lotes,OP-15,1555.8508,1557.3508,False
+5,790,P066,Manipulación y enfriamiento de piezas,OP-15,1557.3508,1558.155467,False
+5,791,P066,Mesa de armado,OP-11,1558.155467,1570.8054670000001,False
+5,792,P066,Área de inspección,OP-11,1570.8054670000001,1571.6441340000001,False
+5,793,P066,Zona de protección y embalaje,OP-11,1571.6441340000001,1572.7708010000001,False

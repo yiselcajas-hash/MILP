@@ -1,0 +1,68 @@
+{
+  "version": "1.4.0-entrega-academica",
+  "python": "3.13.5",
+  "sistema": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "timestamp": "2026-10-12 01:43:47",
+  "pruebas_omitidas": false,
+  "pasos": [
+    {
+      "paso": "01_validar",
+      "correcto": true,
+      "segundos": 2.8,
+      "log": "logs/01_validar.txt"
+    },
+    {
+      "paso": "02_unitarias",
+      "correcto": true,
+      "segundos": 2.97,
+      "log": "logs/02_unitarias.txt"
+    },
+    {
+      "paso": "03_enumeracion",
+      "correcto": true,
+      "segundos": 3.71,
+      "log": "logs/03_enumeracion.txt"
+    },
+    {
+      "paso": "04_rodante_S08A",
+      "correcto": true,
+      "segundos": 2.49,
+      "log": "logs/04_rodante_S08A.txt"
+    },
+    {
+      "paso": "04_rodante_S13A",
+      "correcto": true,
+      "segundos": 2.15,
+      "log": "logs/04_rodante_S13A.txt"
+    }
+  ],
+  "escenarios": [
+    {
+      "escenario": "S08A",
+      "ventanas": 5,
+      "pedidos_piloto": 4,
+      "compromisos": 23,
+      "operaciones_totales": 1152,
+      "porcentaje_cobertura": 1.997,
+      "reservas_unicas": 56,
+      "auditoria_errores": 0,
+      "max_horas_trabajador_dia": 8.0,
+      "incidencias_fusion_fifo": 0,
+      "validacion_global": false
+    },
+    {
+      "escenario": "S13A",
+      "ventanas": 3,
+      "pedidos_piloto": 2,
+      "compromisos": 2,
+      "operaciones_totales": 1152,
+      "porcentaje_cobertura": 0.174,
+      "reservas_unicas": 54,
+      "auditoria_errores": 0,
+      "max_horas_trabajador_dia": 7.41,
+      "incidencias_fusion_fifo": 1,
+      "validacion_global": false
+    }
+  ],
+  "resultado": "PILOTOS_AUDITADOS_COBERTURA_ANUAL_NO_VALIDADA"
+}

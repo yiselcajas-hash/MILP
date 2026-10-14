@@ -1,0 +1,14 @@
+{
+  "version": "1.3.4-auditoria-csv-independiente",
+  "escenario": "S13A",
+  "estado_piloto": "VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL",
+  "operaciones_comprometidas": 2,
+  "reservas_externas_observaciones": 134,
+  "reservas_externas_unicas": 54,
+  "arrastres_registrados": 1,
+  "max_horas_por_trabajador_dia": 7.410334000000148,
+  "errores": [],
+  "valido_solo_para_alcance_exportado": true,
+  "cobertura_anual_validada": false,
+  "advertencia": "Sin validación de operaciones externas nunca protegidas, competencias reales ni feriados."
+}

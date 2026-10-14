@@ -1,0 +1,19 @@
+{
+  "alcance": "ENSAMBLAJE_HIPOTETICO_FIFO_CON_COMPROMISOS_MILP",
+  "pedidos_totales": 96,
+  "operaciones_totales": 1152,
+  "operaciones_base": 1152,
+  "operaciones_comprometidas_milp": 2,
+  "operaciones_sin_compromiso_milp": 1150,
+  "porcentaje_operaciones_comprometidas_milp": 0.174,
+  "operaciones_sin_programacion": 0,
+  "cruces_maquinas_ensamblaje": 0,
+  "violaciones_precedencia_ensamblaje": 0,
+  "cruces_fallas_ensamblaje": 1,
+  "operaciones_externas_sin_asignacion_laboral_verificada": 1150,
+  "total_incidencias_diagnosticas": 1,
+  "incidencias_exportadas": 1,
+  "programa_global_certificado": false,
+  "validacion_laboral_real": false,
+  "mensaje": "Diagnóstico informativo: no hay optimización anual conjunta; FIFO externo es referencial y no cuenta con personal real verificado."
+}

@@ -1,0 +1,10 @@
+COMANDO: /opt/pyvenv/bin/python -X utf8 Optimizacion_MILP_SAGAPI.py rodante-personal --escenario S08A --pedidos 3 --ventanas 5 --paso-rodante 8 --max-operaciones 36 --horizonte-externos 120 --tl 60.0 --salida /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A
+
+01:43:42 RODANTE ventana 1: 4 pedidos; 32 libres; 8 compromisos nuevos; 48 reservas; P1=3612.81
+01:43:42 RODANTE ventana 2: 4 pedidos; 24 libres; 2 compromisos nuevos; 45 reservas; P1=3612.81
+01:43:42 RODANTE ventana 3: 4 pedidos; 22 libres; 7 compromisos nuevos; 46 reservas; P1=3612.81
+01:43:43 RODANTE ventana 4: 4 pedidos; 15 libres; 5 compromisos nuevos; 45 reservas; P1=2322.47
+01:43:43 RODANTE ventana 5: 4 pedidos; 10 libres; 1 compromisos nuevos; 44 reservas; P1=0.00
+01:43:43 RODANTE AUDITORÍA: 56 reservas externas únicas; 0 errores; 11 arrastres de operaciones iniciadas.
+01:43:43 RODANTE VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL: 5/5 ventanas; 23 operaciones comprometidas; cobertura anual NO validada
+01:43:43 Resultados: /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_resumen.json, /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_decisiones.csv, /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_compromisos.csv, /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_compromisos_jornadas.csv, /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_reservas_externas_por_ventana.csv y /mnt/data/SAGAPI_MILP_ENTREGA_FINAL_1_4_0/EVIDENCIA_FINAL/RODANTE_S08A/rodante_S08A_arrastres_entre_turnos.csv

@@ -1,0 +1,24 @@
+﻿operacion_id,pedido,maquina,inicio_h,fin_h,trabajador_simulado
+776,P065,Horno de curado de pintura electrostática por lotes,1474.1969600000002,1475.6969600000002,OP-15
+777,P065,Manipulación y enfriamiento de piezas,1475.6969600000002,1476.5016270000003,OP-15
+778,P065,Mesa de armado,1476.5016270000003,1488.7016270000004,OP-10
+779,P065,Área de inspección,1488.7016270000004,1489.5402940000004,OP-09
+780,P065,Zona de protección y embalaje,1489.5402940000004,1490.6669610000004,OP-10
+782,P066,Sierra de cinta para corte de tubos y perfiles,1479.600667,1490.267334,OP-21
+783,P066,Taladro de banco para perforación de acero,1490.267334,1507.020667,OP-12
+784,P066,Plegadora hidráulica de chapa metálica,1507.020667,1521.220667,OP-17
+800,P067,Pistola manual de pintura electrostática en polvo,1476.3444800000002,1477.3204800000003,OP-08
+801,P067,Horno de curado de pintura electrostática por lotes,1477.3204800000003,1478.0704800000003,OP-14
+802,P067,Manipulación y enfriamiento de piezas,1478.0704800000003,1478.4668130000002,OP-14
+803,P067,Mesa de armado,1488.7016270000004,1495.7016270000004,OP-23
+804,P067,Área de inspección,1495.7016270000004,1496.1139600000004,OP-23
+805,P067,Zona de protección y embalaje,1496.1139600000004,1496.6652930000005,OP-11
+843,P071,Plegadora hidráulica de chapa metálica,1476.5,1489.566667,OP-04
+844,P071,Mesa de desbarbado/esmerilado,1489.566667,1492.116667,OP-05
+845,P071,Zona de preparación superficial,1492.116667,1496.502,OP-07
+846,P071,Pistola manual de pintura electrostática en polvo,1496.502,1497.798667,OP-07
+847,P071,Horno de curado de pintura electrostática por lotes,1497.798667,1498.548667,OP-15
+848,P071,Manipulación y enfriamiento de piezas,1498.548667,1499.075334,OP-15
+849,P071,Mesa de armado,1499.3016270000003,1503.9016270000002,OP-10
+850,P071,Área de inspección,1503.9016270000002,1504.50996,OP-09
+851,P071,Zona de protección y embalaje,1504.5099600000003,1505.3216270000003,OP-09

@@ -1,0 +1,57 @@
+COMANDO: /opt/pyvenv/bin/python -X utf8 -m unittest discover -s tests -p test_*.py -v
+
+test_asignacion_operaciones_simultaneas_y_descanso (test_auditoria_personal.AuditoriaOperariosTest.test_asignacion_operaciones_simultaneas_y_descanso) ... ok
+test_dobles_reservas_maquina_detectadas (test_auditoria_personal.AuditoriaOperariosTest.test_dobles_reservas_maquina_detectadas) ... ok
+test_falta_de_habilidad_incompatible_detectada (test_auditoria_personal.AuditoriaOperariosTest.test_falta_de_habilidad_incompatible_detectada) ... ok
+test_operacion_fuera_calendario_detectada (test_auditoria_personal.AuditoriaOperariosTest.test_operacion_fuera_calendario_detectada) ... ok
+test_bloquea_cruce_de_maquina_externa (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_bloquea_cruce_de_maquina_externa) ... ok
+test_bloquea_cruce_de_trabajador_externo (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_bloquea_cruce_de_trabajador_externo) ... ok
+test_rechaza_cambio_trabajador_entre_ventanas (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_rechaza_cambio_trabajador_entre_ventanas) ... ok
+test_rechaza_operacion_duplicada_entre_subproblemas (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_rechaza_operacion_duplicada_entre_subproblemas) ... ok
+test_rechaza_solapamiento_dentro_fifo_externo (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_rechaza_solapamiento_dentro_fifo_externo) ... ok
+test_reserva_repetida_no_es_doble_conflicto (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_reserva_repetida_no_es_doble_conflicto) ... ok
+test_todos_los_intervalos_sin_conflictos (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_todos_los_intervalos_sin_conflictos) ... ok
+test_traspaso_cambio_y_ausencia (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_traspaso_cambio_y_ausencia) ... ok
+test_traspaso_correcto (test_auditoria_rodante_ext.AuditoriaRodanteExternaTests.test_traspaso_correcto) ... ok
+test_s05a_externa_ocupa_maquina_hasta_terminar (test_cobertura_externa_calendario.CoberturaExternaRealistaTest.test_s05a_externa_ocupa_maquina_hasta_terminar) ... ok
+test_s08a_auto_incluye_externo_interrumpido (test_cobertura_externa_calendario.CoberturaExternaRealistaTest.test_s08a_auto_incluye_externo_interrumpido) ... ok
+test_s08a_no_puede_ignorar_externo_interrumpido (test_cobertura_externa_calendario.CoberturaExternaRealistaTest.test_s08a_no_puede_ignorar_externo_interrumpido) ... ok
+test_error_fuera_calendario (test_cobertura_externa_calendario.TurnosTest.test_error_fuera_calendario) ... ok
+test_maximo_ocho_horas_por_dia (test_cobertura_externa_calendario.TurnosTest.test_maximo_ocho_horas_por_dia) ... ok
+test_operacion_12h_cruza_jornadas_y_descanso (test_cobertura_externa_calendario.TurnosTest.test_operacion_12h_cruza_jornadas_y_descanso) ... ok
+test_trabajador_sobrecargado_se_detecta (test_cobertura_externa_calendario.TurnosTest.test_trabajador_sobrecargado_se_detecta) ... ok
+test_identifica_averia (test_diagnostico_global.DiagnosticoGlobalTests.test_identifica_averia) ... ok
+test_identifica_solape_y_precedencia (test_diagnostico_global.DiagnosticoGlobalTests.test_identifica_solape_y_precedencia) ... ok
+test_op_inexistente (test_diagnostico_global.DiagnosticoGlobalTests.test_op_inexistente) ... ok
+test_programa_hypotetico_original_sin_choques (test_diagnostico_global.DiagnosticoGlobalTests.test_programa_hypotetico_original_sin_choques) ... ok
+test_rechaza_falta_de_operacion (test_diagnostico_global.DiagnosticoGlobalTests.test_rechaza_falta_de_operacion) ... ok
+test_cobertura_simultanea_15_recursos (test_personal_25.Personal25Test.test_cobertura_simultanea_15_recursos) ... ok
+test_exactamente_25_en_un_turno (test_personal_25.Personal25Test.test_exactamente_25_en_un_turno) ... ok
+test_matriz_incompatible_se_detecta (test_personal_25.Personal25Test.test_matriz_incompatible_se_detecta) ... ok
+test_milp_detecta_escasez_real_en_un_contraejemplo (test_personal_25.Personal25Test.test_milp_detecta_escasez_real_en_un_contraejemplo) ... ok
+test_reserva_forma_parte_modelo_y_encode_valido (test_personal_25.Personal25Test.test_reserva_forma_parte_modelo_y_encode_valido) ... ok
+test_compatibilidad_condicionada_a_maquina (test_personal_integrado.IntegracionPersonalTest.test_compatibilidad_condicionada_a_maquina) ... ok
+test_fijo_ocupa_personal_antes_de_nueva_operacion (test_personal_integrado.IntegracionPersonalTest.test_fijo_ocupa_personal_antes_de_nueva_operacion) ... ok
+test_limited_and_no_skills (test_personal_integrado.IntegracionPersonalTest.test_limited_and_no_skills) ... ok
+test_un_trabajador_dos_maquinas_secuencial (test_personal_integrado.IntegracionPersonalTest.test_un_trabajador_dos_maquinas_secuencial) ... ok
+test_horizonte_externo_invalido (test_reservas_externas_futuras.ReservasExternasTest.test_horizonte_externo_invalido) ... ok
+test_reserva_externa_fija_no_reutiliza_trabajador_ocupado (test_reservas_externas_futuras.ReservasExternasTest.test_reserva_externa_fija_no_reutiliza_trabajador_ocupado) ... ok
+test_reserva_maquina_y_trabajador_impide_solapes (test_reservas_externas_futuras.ReservasExternasTest.test_reserva_maquina_y_trabajador_impide_solapes) ... ok
+test_verificador_detecta_conflicto_reserva_corrupta (test_reservas_externas_futuras.ReservasExternasTest.test_verificador_detecta_conflicto_reserva_corrupta) ... ok
+test_compromiso_valido (test_rodante_personal.RodantePersonalTests.test_compromiso_valido) ... ok
+test_detecta_doble_maquina (test_rodante_personal.RodantePersonalTests.test_detecta_doble_maquina) ... ok
+test_detecta_doble_trabajador (test_rodante_personal.RodantePersonalTests.test_detecta_doble_trabajador) ... ok
+test_inmutabilidad_horarios (test_rodante_personal.RodantePersonalTests.test_inmutabilidad_horarios) ... ok
+test_inmutabilidad_maquina (test_rodante_personal.RodantePersonalTests.test_inmutabilidad_maquina) ... ok
+test_inmutabilidad_trabajador (test_rodante_personal.RodantePersonalTests.test_inmutabilidad_trabajador) ... ok
+test_missing_operation (test_rodante_personal.RodantePersonalTests.test_missing_operation) ... ok
+test_parametros_invalidos (test_rodante_personal.RodantePersonalTests.test_parametros_invalidos) ... ok
+test_exportacion_mps_sin_api_privada (test_solver_publico.SolverPublicoTest.test_exportacion_mps_sin_api_privada) ... ok
+test_infactible_no_declara_optimo (test_solver_publico.SolverPublicoTest.test_infactible_no_declara_optimo) ... ok
+test_optimalidad_con_cota (test_solver_publico.SolverPublicoTest.test_optimalidad_con_cota) ... ok
+test_verificador_detecta_candidato_invalido (test_solver_publico.SolverPublicoTest.test_verificador_detecta_candidato_invalido) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 1.877s
+
+OK

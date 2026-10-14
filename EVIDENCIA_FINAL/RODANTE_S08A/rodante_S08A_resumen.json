@@ -1,0 +1,299 @@
+{
+  "version": "1.3.4-piloto-rodante-auditable",
+  "estado": "VENTANAS_SOLUCIONADAS_COBERTURA_PARCIAL",
+  "ventanas_solicitadas": 5,
+  "ventanas_resueltas": 5,
+  "paso_turno_h": 8.0,
+  "horizonte_externo_h": 120.0,
+  "pedidos_incluidos": [
+    "P065",
+    "P066",
+    "P067",
+    "P071"
+  ],
+  "operaciones_comprometidas": 23,
+  "externas_con_trabajador_simulado": 56,
+  "cobertura_anual_validada": false,
+  "habilidades_verificadas": false,
+  "calendario_feriados_verificado": false,
+  "reservas_externas_referenciales": true,
+  "advertencias": [],
+  "auditoria_reservas_y_compromisos": {
+    "reservas_observaciones": 232,
+    "reservas_externas_unicas": 56,
+    "compromisos_auditados": 23,
+    "cruces_maquina_compromiso_externa": 0,
+    "cruces_trabajador_compromiso_externa": 0,
+    "errores": 0,
+    "correcto_en_alcance_exportado": true,
+    "cobertura_anual_certificada": false,
+    "advertencia": "Solo se auditó el conjunto de reservas FIFO EXTERNAS visto en las ventanas; no incluye el año completo ni competencias laborales verificadas."
+  },
+  "filas_reservas_externas_exportadas": 232,
+  "filas_arrastres_exportadas": 11,
+  "nota": "Piloto rodante sobre pedidos seleccionados y reservas FIFO simuladas. No equivale a validación de 96 pedidos.",
+  "ventanas": [
+    {
+      "ventana": 1,
+      "inicio_h": 1473.0,
+      "compromiso_h": 1481.0,
+      "pedidos": 4,
+      "operaciones_libres": 32,
+      "operaciones_comprometidas_nuevas": 8,
+      "operaciones_comprometidas_acumuladas": 8,
+      "reservas_externas": 48,
+      "externas_pendientes": 283,
+      "estado": "OPTIMO_EN_SUBPROBLEMA",
+      "fases": [
+        {
+          "fase": "P1_penalidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.09536962099991797,
+          "brecha": 0.0,
+          "objetivo": 3612.8118000000004
+        },
+        {
+          "fase": "P2_tardanza",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.038720339000064996,
+          "brecha": 1.2969374066264601e-14,
+          "objetivo": 10.957240220379402
+        },
+        {
+          "fase": "P3_estabilidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.013675374000740703,
+          "brecha": 0.0,
+          "objetivo": -231.84000000000265
+        }
+      ],
+      "auto_incluidos": [
+        "P071"
+      ],
+      "personal_usado": 16,
+      "horas_maximas_trabajador_dia": 8.0,
+      "segmentos_calendario_comprometidos": 18,
+      "arrastres_entrantes": 0,
+      "compromisos_vigentes_al_cerrar": 3,
+      "reservas_externas_exportadas": 48,
+      "reservas_externas_unicas_auditadas": 48,
+      "cruces_maquina_con_reservas": 0,
+      "cruces_trabajador_con_reservas": 0,
+      "penalidad_subproblema": 3612.8118000000004,
+      "tardanza_subproblema": 10.957351177619621,
+      "inestabilidad_subproblema": 24.159999999997353,
+      "cobertura_global": false
+    },
+    {
+      "ventana": 2,
+      "inicio_h": 1481.0,
+      "compromiso_h": 1489.0,
+      "pedidos": 4,
+      "operaciones_libres": 24,
+      "operaciones_comprometidas_nuevas": 2,
+      "operaciones_comprometidas_acumuladas": 10,
+      "reservas_externas": 45,
+      "externas_pendientes": 281,
+      "estado": "OPTIMO_EN_SUBPROBLEMA",
+      "fases": [
+        {
+          "fase": "P1_penalidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.032485867999639595,
+          "brecha": 0.0,
+          "objetivo": 3612.8118000000004
+        },
+        {
+          "fase": "P2_tardanza",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.03465233499991882,
+          "brecha": 0.0,
+          "objetivo": 10.95724022037926
+        },
+        {
+          "fase": "P3_estabilidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.009875365998595953,
+          "brecha": 0.0,
+          "objetivo": -192.00000000000068
+        }
+      ],
+      "auto_incluidos": [],
+      "personal_usado": 14,
+      "horas_maximas_trabajador_dia": 8.0,
+      "segmentos_calendario_comprometidos": 21,
+      "arrastres_entrantes": 3,
+      "compromisos_vigentes_al_cerrar": 4,
+      "reservas_externas_exportadas": 46,
+      "reservas_externas_unicas_auditadas": 50,
+      "cruces_maquina_con_reservas": 0,
+      "cruces_trabajador_con_reservas": 0,
+      "penalidad_subproblema": 3612.8118000000004,
+      "tardanza_subproblema": 10.95735117761948,
+      "inestabilidad_subproblema": -6.821210263296962e-13,
+      "cobertura_global": false
+    },
+    {
+      "ventana": 3,
+      "inicio_h": 1489.0,
+      "compromiso_h": 1497.0,
+      "pedidos": 4,
+      "operaciones_libres": 22,
+      "operaciones_comprometidas_nuevas": 7,
+      "operaciones_comprometidas_acumuladas": 17,
+      "reservas_externas": 46,
+      "externas_pendientes": 279,
+      "estado": "OPTIMO_EN_SUBPROBLEMA",
+      "fases": [
+        {
+          "fase": "P1_penalidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.028054557000359637,
+          "brecha": 0.0,
+          "objetivo": 3612.8118000000004
+        },
+        {
+          "fase": "P2_tardanza",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.018805176001478685,
+          "brecha": 0.0,
+          "objetivo": 10.95724022037926
+        },
+        {
+          "fase": "P3_estabilidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.00881341800049995,
+          "brecha": 0.0,
+          "objetivo": -176.0
+        }
+      ],
+      "auto_incluidos": [],
+      "personal_usado": 14,
+      "horas_maximas_trabajador_dia": 8.0,
+      "segmentos_calendario_comprometidos": 35,
+      "arrastres_entrantes": 4,
+      "compromisos_vigentes_al_cerrar": 2,
+      "reservas_externas_exportadas": 47,
+      "reservas_externas_unicas_auditadas": 52,
+      "cruces_maquina_con_reservas": 0,
+      "cruces_trabajador_con_reservas": 0,
+      "penalidad_subproblema": 3612.8118000000004,
+      "tardanza_subproblema": 10.95735117761948,
+      "inestabilidad_subproblema": 0.0,
+      "cobertura_global": false
+    },
+    {
+      "ventana": 4,
+      "inicio_h": 1497.0,
+      "compromiso_h": 1505.0,
+      "pedidos": 4,
+      "operaciones_libres": 15,
+      "operaciones_comprometidas_nuevas": 5,
+      "operaciones_comprometidas_acumuladas": 22,
+      "reservas_externas": 45,
+      "externas_pendientes": 277,
+      "estado": "OPTIMO_EN_SUBPROBLEMA",
+      "fases": [
+        {
+          "fase": "P1_penalidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.007058186998619931,
+          "brecha": 0.0,
+          "objetivo": 2322.4698
+        },
+        {
+          "fase": "P2_tardanza",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.007032659999822499,
+          "brecha": 0.0,
+          "objetivo": 10.539324444713394
+        },
+        {
+          "fase": "P3_estabilidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.004396678999910364,
+          "brecha": 0.0,
+          "objetivo": -119.99999999999932
+        }
+      ],
+      "auto_incluidos": [],
+      "personal_usado": 10,
+      "horas_maximas_trabajador_dia": 8.0,
+      "segmentos_calendario_comprometidos": 42,
+      "arrastres_entrantes": 2,
+      "compromisos_vigentes_al_cerrar": 2,
+      "reservas_externas_exportadas": 47,
+      "reservas_externas_unicas_auditadas": 54,
+      "cruces_maquina_con_reservas": 0,
+      "cruces_trabajador_con_reservas": 0,
+      "penalidad_subproblema": 2322.4698,
+      "tardanza_subproblema": 10.539434984037836,
+      "inestabilidad_subproblema": 6.821210263296962e-13,
+      "cobertura_global": false
+    },
+    {
+      "ventana": 5,
+      "inicio_h": 1505.0,
+      "compromiso_h": 1513.0,
+      "pedidos": 4,
+      "operaciones_libres": 10,
+      "operaciones_comprometidas_nuevas": 1,
+      "operaciones_comprometidas_acumuladas": 23,
+      "reservas_externas": 44,
+      "externas_pendientes": 275,
+      "estado": "OPTIMO_EN_SUBPROBLEMA",
+      "fases": [
+        {
+          "fase": "P1_penalidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.0035060150003118906,
+          "brecha": 0.0,
+          "objetivo": 0.0
+        },
+        {
+          "fase": "P2_tardanza",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.002400673000011011,
+          "brecha": 0.0,
+          "objetivo": 0.0
+        },
+        {
+          "fase": "P3_estabilidad",
+          "estado": "Optimal",
+          "certificado": true,
+          "tiempo_s": 0.0031199549994198605,
+          "brecha": 0.0,
+          "objetivo": -79.99999999999977
+        }
+      ],
+      "auto_incluidos": [],
+      "personal_usado": 7,
+      "horas_maximas_trabajador_dia": 8.0,
+      "segmentos_calendario_comprometidos": 47,
+      "arrastres_entrantes": 2,
+      "compromisos_vigentes_al_cerrar": 1,
+      "reservas_externas_exportadas": 44,
+      "reservas_externas_unicas_auditadas": 56,
+      "cruces_maquina_con_reservas": 0,
+      "cruces_trabajador_con_reservas": 0,
+      "penalidad_subproblema": 0.0,
+      "tardanza_subproblema": 0.0001,
+      "inestabilidad_subproblema": 2.2737367544323206e-13,
+      "cobertura_global": false
+    }
+  ]
+}
