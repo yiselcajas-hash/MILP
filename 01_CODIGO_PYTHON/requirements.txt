@@ -1,5 +1,6 @@
 # Versiones exactas con las que se ejecutaron todas las pruebas y experimentos de SAGAPI v2.0
-# (Python 3.11–3.13; HiGHS se usa a través de SciPy, sin dependencias comerciales).
+# (Python 3.12 o 3.13: numpy 2.5 no publica paquetes para 3.11; HiGHS se usa a través de SciPy, sin
+# dependencias comerciales).
 numpy==2.5.3
 scipy==1.18.1
 pandas==3.0.5

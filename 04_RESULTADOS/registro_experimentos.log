@@ -1,0 +1,130 @@
+04:58:44 INFO E0 pedidos=96 ops=1152 certificado=True tardanza inevitable: 3 pedidos
+04:58:44 INFO E0 terminado en 0 s
+04:58:58 INFO E1 S00 FIFO+CONV: atrasados=73 OTD=24.0% Σw·T=1039.9 pen=127294 MILP óptimos=0/0 t=0s
+04:59:10 INFO E1 S00 EDD+EDD: atrasados=28 OTD=70.8% Σw·T=735.2 pen=86018 MILP óptimos=0/0 t=0s
+04:59:43 INFO E1 S00 MILP+CONV: atrasados=32 OTD=66.7% Σw·T=257.5 pen=76682 MILP óptimos=24/24 t=19s
+04:59:53 INFO E1 S20A FIFO+CONV: atrasados=74 OTD=22.9% Σw·T=1114.8 pen=130474 MILP óptimos=0/0 t=0s
+05:00:41 INFO E1 S20A FIFO+MILP: atrasados=66 OTD=31.2% Σw·T=852.0 pen=123309 MILP óptimos=12/12 t=44s
+05:00:48 INFO E1 S20A EDD+EDD: atrasados=28 OTD=70.8% Σw·T=801.9 pen=86852 MILP óptimos=0/0 t=0s
+05:01:08 INFO E1 S20A MILP+CONV: atrasados=34 OTD=64.6% Σw·T=309.6 pen=81848 MILP óptimos=24/24 t=18s
+05:01:35 INFO E1 S20A MILP+MILP: atrasados=33 OTD=65.6% Σw·T=307.3 pen=80128 MILP óptimos=36/36 t=22s
+05:01:35 INFO E1 terminado en 171 s
+05:01:37 INFO E2 S01A FIFO+CONV Δw·T=+8.6 Δatr=+0 | EDD+EDD Δw·T=+6.7 Δatr=+0 | FIFO+MILP Δw·T=-5.1 Δatr=-1
+05:01:38 INFO E2 S01B FIFO+CONV Δw·T=+8.6 Δatr=+0 | EDD+EDD Δw·T=+6.7 Δatr=+0 | FIFO+MILP Δw·T=-5.1 Δatr=-1
+05:01:57 INFO E2 S02A FIFO+CONV Δw·T=+3.3 Δatr=+0 | EDD+EDD Δw·T=+3.2 Δatr=+0 | FIFO+MILP Δw·T=-30.3 Δatr=+0
+05:02:15 INFO E2 S02B FIFO+CONV Δw·T=+3.3 Δatr=+0 | EDD+EDD Δw·T=+24.1 Δatr=+0 | FIFO+MILP Δw·T=-30.3 Δatr=+0
+05:02:15 INFO E2 S03A FIFO+CONV Δw·T=+3.3 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=+1.8 Δatr=+1
+05:02:16 INFO E2 S03B FIFO+CONV Δw·T=+3.3 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=+1.8 Δatr=+1
+05:02:27 INFO E2 S04A FIFO+CONV Δw·T=+5.9 Δatr=+0 | EDD+EDD Δw·T=+17.3 Δatr=+0 | FIFO+MILP Δw·T=-23.6 Δatr=+0
+05:02:41 INFO E2 S04B FIFO+CONV Δw·T=+5.9 Δatr=+0 | EDD+EDD Δw·T=+81.9 Δatr=+0 | FIFO+MILP Δw·T=-23.6 Δatr=+0
+05:02:42 INFO E2 S05A FIFO+CONV Δw·T=+8.9 Δatr=+0 | EDD+EDD Δw·T=+9.5 Δatr=+0 | FIFO+MILP Δw·T=-25.8 Δatr=+0
+05:02:44 INFO E2 S05B FIFO+CONV Δw·T=+10.4 Δatr=+0 | EDD+EDD Δw·T=+27.5 Δatr=+0 | FIFO+MILP Δw·T=-22.3 Δatr=+0
+05:02:51 INFO E2 S06A FIFO+CONV Δw·T=+5.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-58.6 Δatr=-1
+05:03:02 INFO E2 S06B FIFO+CONV Δw·T=+5.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-58.6 Δatr=-1
+05:03:03 INFO E2 S07A FIFO+CONV Δw·T=+0.9 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=+0.9 Δatr=+0
+05:03:03 INFO E2 S07B FIFO+CONV Δw·T=+0.9 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=+0.9 Δatr=+0
+05:03:08 INFO E2 S08A FIFO+CONV Δw·T=+0.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-32.1 Δatr=-3
+05:03:11 INFO E2 S08B FIFO+CONV Δw·T=+2.2 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-32.1 Δatr=-3
+05:03:12 INFO E2 S09A FIFO+CONV Δw·T=+6.2 Δatr=+0 | EDD+EDD Δw·T=+8.6 Δatr=+0 | FIFO+MILP Δw·T=-15.5 Δatr=-1
+05:03:14 INFO E2 S09B FIFO+CONV Δw·T=+13.7 Δatr=+1 | EDD+EDD Δw·T=+18.5 Δatr=+0 | FIFO+MILP Δw·T=-9.8 Δatr=+0
+05:03:16 INFO E2 S10A FIFO+CONV Δw·T=+14.1 Δatr=+1 | EDD+EDD Δw·T=+11.5 Δatr=+0 | FIFO+MILP Δw·T=-7.9 Δatr=+0
+05:03:18 INFO E2 S10B FIFO+CONV Δw·T=+14.3 Δatr=+1 | EDD+EDD Δw·T=+15.0 Δatr=+0 | FIFO+MILP Δw·T=-7.8 Δatr=+0
+05:03:20 INFO E2 S11A FIFO+CONV Δw·T=+6.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-1.1 Δatr=-1
+05:03:22 INFO E2 S11B FIFO+CONV Δw·T=+6.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-1.0 Δatr=-1
+05:03:24 INFO E2 S12A FIFO+CONV Δw·T=+9.6 Δatr=+0 | EDD+EDD Δw·T=+3.0 Δatr=+0 | FIFO+MILP Δw·T=-21.7 Δatr=+0
+05:03:25 INFO E2 S12B FIFO+CONV Δw·T=+9.6 Δatr=+0 | EDD+EDD Δw·T=+19.0 Δatr=+0 | FIFO+MILP Δw·T=-21.6 Δatr=+0
+05:03:26 INFO E2 S13A FIFO+CONV Δw·T=+22.0 Δatr=+0 | EDD+EDD Δw·T=+37.0 Δatr=+0 | FIFO+MILP Δw·T=+1.5 Δatr=+0
+05:03:27 INFO E2 S13B FIFO+CONV Δw·T=+30.6 Δatr=+0 | EDD+EDD Δw·T=+55.3 Δatr=+1 | FIFO+MILP Δw·T=+4.2 Δatr=+0
+05:03:39 INFO E2 S14A FIFO+CONV Δw·T=+17.2 Δatr=+0 | EDD+EDD Δw·T=+6.6 Δatr=+1 | FIFO+MILP Δw·T=-2.5 Δatr=-1
+05:04:01 INFO E2 S14B FIFO+CONV Δw·T=+36.3 Δatr=+0 | EDD+EDD Δw·T=+37.7 Δatr=+1 | FIFO+MILP Δw·T=+78.5 Δatr=-1
+05:04:04 INFO E2 S15A FIFO+CONV Δw·T=+10.9 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-14.7 Δatr=+0
+05:04:06 INFO E2 S15B FIFO+CONV Δw·T=+30.1 Δatr=+1 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-8.8 Δatr=-1
+05:04:07 INFO E2 S16A FIFO+CONV Δw·T=+16.2 Δatr=+0 | EDD+EDD Δw·T=+16.6 Δatr=+1 | FIFO+MILP Δw·T=-2.9 Δatr=+0
+05:04:09 INFO E2 S16B FIFO+CONV Δw·T=+33.7 Δatr=+0 | EDD+EDD Δw·T=+16.6 Δatr=+1 | FIFO+MILP Δw·T=+5.5 Δatr=+0
+05:04:09 INFO E2 S17B FIFO+CONV Δw·T=+24.5 Δatr=+1 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=+12.9 Δatr=+1
+05:04:10 INFO E2 S18A FIFO+CONV Δw·T=+0.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-33.0 Δatr=-1
+05:04:11 INFO E2 S18B FIFO+CONV Δw·T=+0.0 Δatr=+0 | EDD+EDD Δw·T=+0.0 Δatr=+0 | FIFO+MILP Δw·T=-33.0 Δatr=-1
+05:04:40 INFO E2 S19A FIFO+CONV Δw·T=+5.0 Δatr=+0 | EDD+EDD Δw·T=+17.3 Δatr=+0 | FIFO+MILP Δw·T=-24.6 Δatr=+0
+05:05:01 INFO E2 S19B FIFO+CONV Δw·T=+15.1 Δatr=+0 | EDD+EDD Δw·T=+67.7 Δatr=+0 | FIFO+MILP Δw·T=-19.9 Δatr=+0
+05:05:02 INFO E2 S21A FIFO+CONV Δw·T=+17.4 Δatr=+0 | EDD+EDD Δw·T=+134.6 Δatr=+1 | FIFO+MILP Δw·T=-2.9 Δatr=+0
+05:05:02 INFO E2 terminado en 207 s
+05:05:10 INFO E2b S06A CONV atr=7/8 w·T=205.9 D=33.1 | EDD atr=6/8 w·T=200.3 D=1855.5 | MILP atr=6/8 w·T=142.3 D=942.6
+05:05:11 INFO E2b S13A CONV atr=3/4 w·T=89.3 D=295.2 | EDD atr=4/4 w·T=160.0 D=840.4 | MILP atr=3/4 w·T=68.7 D=549.5
+05:05:33 INFO E2b S19A CONV atr=8/8 w·T=164.9 D=65.5 | EDD atr=6/8 w·T=205.3 D=1433.9 | MILP atr=8/8 w·T=135.4 D=674.2
+05:05:33 INFO E2B terminado en 31 s
+05:06:33 INFO E3 E-BASE FIFO+CONV atr=73 w·T=1039.9 | EDD+EDD atr=28 w·T=735.2 | MILP+MILP atr=32 w·T=257.5
+05:07:36 INFO E3 E-CARGA-BAJA FIFO+CONV atr=3 w·T=11.2 | EDD+EDD atr=0 w·T=0.0 | MILP+MILP atr=0 w·T=0.0
+05:08:56 INFO E3 E-CARGA-ALTA FIFO+CONV atr=96 w·T=3274.8 | EDD+EDD atr=62 w·T=2497.5 | MILP+MILP atr=52 w·T=1554.9
+05:24:30 INFO E3 E-CARGA-MUY-ALTA FIFO+CONV atr=96 w·T=9171.0 | EDD+EDD atr=94 w·T=8447.3 | MILP+MILP atr=84 w·T=5408.4
+05:25:31 INFO E3 E-PLAZO-AJUSTADO FIFO+CONV atr=96 w·T=2553.7 | EDD+EDD atr=46 w·T=1797.1 | MILP+MILP atr=44 w·T=1161.9
+05:26:55 INFO E3 E-PLAZO-HOLGADO FIFO+CONV atr=20 w·T=110.8 | EDD+EDD atr=6 w·T=108.7 | MILP+MILP atr=2 w·T=13.6
+05:30:38 INFO E3 E-PERSONAL-20 FIFO+CONV atr=73 w·T=1039.9 | EDD+EDD atr=28 w·T=735.2 | MILP+MILP atr=32 w·T=257.5
+05:30:59 INFO E3 E-PERSONAL-15 FIFO+CONV atr=73 w·T=1039.9 | EDD+EDD atr=28 w·T=735.2 | MILP+MILP atr=32 w·T=257.5
+05:32:09 INFO E3 E-MANT-PLE FIFO+CONV atr=73 w·T=1045.0 | EDD+EDD atr=28 w·T=770.9 | MILP+MILP atr=33 w·T=267.5
+05:32:54 INFO E3 E-FALLAS-PLE FIFO+CONV atr=74 w·T=1114.8 | EDD+EDD atr=28 w·T=801.9 | MILP+MILP atr=33 w·T=307.3
+05:34:07 INFO E3 E-FALLA-LARGA FIFO+CONV atr=73 w·T=1061.9 | EDD+EDD atr=28 w·T=772.2 | MILP+MILP atr=33 w·T=277.6
+05:35:58 INFO E3 E-ALTA+FALLAS FIFO+CONV atr=96 w·T=3449.0 | EDD+EDD atr=64 w·T=2821.7 | MILP+MILP atr=58 w·T=1854.6
+05:35:58 INFO E3 terminado en 1826 s
+05:35:58 INFO E4 duracion_falla_mult=0.5 S20A FIFO+CONV: atr=74 w·T=1077.8 pen=130474 D=524.3
+05:36:22 INFO E4 duracion_falla_mult=0.5 S20A MILP+MILP: atr=33 w·T=282.1 pen=80128 D=384.6
+05:36:22 INFO E4 duracion_falla_mult=1 S20A FIFO+CONV: atr=74 w·T=1114.8 pen=130474 D=967.0
+05:36:45 INFO E4 duracion_falla_mult=1 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:36:45 INFO E4 duracion_falla_mult=2 S20A FIFO+CONV: atr=75 w·T=1176.9 pen=133655 D=1685.2
+05:37:13 INFO E4 duracion_falla_mult=2 S20A MILP+MILP: atr=37 w·T=361.3 pen=88642 D=1622.0
+05:37:14 INFO E4 duracion_falla_mult=4 S20A FIFO+CONV: atr=79 w·T=1404.8 pen=145282 D=3937.3
+05:37:55 INFO E4 duracion_falla_mult=4 S20A MILP+MILP: atr=38 w·T=532.8 pen=87916 D=4325.2
+05:38:14 INFO E4 regla_objetivo=TARDANZA_PONDERADA S00 MILP+MILP: atr=32 w·T=257.5 pen=76682 D=0.0
+05:38:37 INFO E4 regla_objetivo=TARDANZA_PONDERADA S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:38:46 INFO E4 regla_objetivo=PENALIDAD_FIJA S00 MILP+MILP: atr=19 w·T=398.3 pen=41520 D=0.0
+05:38:59 INFO E4 regla_objetivo=PENALIDAD_FIJA S20A MILP+MILP: atr=19 w·T=430.0 pen=41520 D=586.4
+05:39:22 INFO E4 beta_reasignacion=0 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:39:45 INFO E4 beta_reasignacion=8 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:40:07 INFO E4 beta_reasignacion=24 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:40:30 INFO E4 horizonte_congelado_h=0 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=608.9
+05:40:49 INFO E4 horizonte_congelado_h=8 S20A MILP+MILP: atr=33 w·T=307.3 pen=80128 D=623.6
+05:40:49 INFO E4 factor_alternativa=1.0 S15A FIFO+CONV: atr=73 w·T=1050.8 pen=127294 D=191.6
+05:40:52 INFO E4 factor_alternativa=1.0 S15A FIFO+MILP: atr=73 w·T=1022.4 pen=128152 D=574.3
+05:40:52 INFO E4 factor_alternativa=1.0 S16A FIFO+CONV: atr=73 w·T=1056.0 pen=127294 D=102.4
+05:40:53 INFO E4 factor_alternativa=1.0 S16A FIFO+MILP: atr=73 w·T=1037.0 pen=127294 D=168.7
+05:40:53 INFO E4 factor_alternativa=1.1 S15A FIFO+CONV: atr=73 w·T=1050.8 pen=127294 D=191.6
+05:40:56 INFO E4 factor_alternativa=1.1 S15A FIFO+MILP: atr=73 w·T=1025.1 pen=128152 D=587.9
+05:40:56 INFO E4 factor_alternativa=1.1 S16A FIFO+CONV: atr=73 w·T=1056.0 pen=127294 D=102.4
+05:40:57 INFO E4 factor_alternativa=1.1 S16A FIFO+MILP: atr=73 w·T=1039.9 pen=127294 D=265.2
+05:40:57 INFO E4 factor_alternativa=1.25 S15A FIFO+CONV: atr=73 w·T=1050.8 pen=127294 D=191.6
+05:41:00 INFO E4 factor_alternativa=1.25 S15A FIFO+MILP: atr=72 w·T=1028.2 pen=127071 D=616.0
+05:41:00 INFO E4 factor_alternativa=1.25 S16A FIFO+CONV: atr=73 w·T=1056.0 pen=127294 D=102.4
+05:41:02 INFO E4 factor_alternativa=1.25 S16A FIFO+MILP: atr=73 w·T=1044.5 pen=127294 D=279.1
+05:41:02 INFO E4 aplicar_feriados=0 S00 FIFO+CONV: atr=73 w·T=1039.9 pen=127294 D=0.0
+05:41:22 INFO E4 aplicar_feriados=0 S00 MILP+CONV: atr=32 w·T=257.5 pen=76682 D=0.0
+05:41:22 INFO E4 aplicar_feriados=1 S00 FIFO+CONV: atr=80 w·T=1411.9 pen=147668 D=0.0
+05:41:41 INFO E4 aplicar_feriados=1 S00 MILP+CONV: atr=38 w·T=469.2 pen=93018 D=0.0
+05:41:41 INFO E4 lote_no_cruza=TRAMO S00 FIFO+CONV: atr=73 w·T=1039.9 pen=127294 D=0.0
+05:42:00 INFO E4 lote_no_cruza=TRAMO S00 MILP+CONV: atr=32 w·T=257.5 pen=76682 D=0.0
+05:42:00 INFO E4 lote_no_cruza=JORNADA S00 FIFO+CONV: atr=73 w·T=1035.1 pen=127294 D=0.0
+05:42:21 INFO E4 lote_no_cruza=JORNADA S00 MILP+CONV: atr=32 w·T=256.8 pen=76682 D=0.0
+05:42:21 INFO E4 terminado en 383 s
+05:42:25 INFO E5 v2.0 config. v1.4 S06A presolve=True: OPTIMO 3.68s vars=507
+05:42:27 INFO E5 v2.0 config. v1.4 S06A presolve=False: OPTIMO 2.01s vars=507
+05:42:28 INFO E5 v2.0 config. v1.4 S13A presolve=True: OPTIMO 0.85s vars=197
+05:42:28 INFO E5 v2.0 config. v1.4 S13A presolve=False: OPTIMO 0.38s vars=197
+05:42:31 INFO E5 v2.0 config. v1.4 S19A presolve=True: OPTIMO 3.02s vars=528
+05:42:37 INFO E5 v2.0 config. v1.4 S19A presolve=False: OPTIMO 6.33s vars=528
+05:42:42 INFO E5 v2.0 config. v1.4 S08A presolve=True: OPTIMO 4.89s vars=529
+05:42:50 INFO E5 v2.0 config. v1.4 S08A presolve=False: OPTIMO 7.62s vars=529
+05:42:58 INFO E5 v2.0 por defecto S06A presolve=True: OPTIMO 8.18s vars=514
+05:43:22 INFO E5 v2.0 por defecto S06A presolve=False: OPTIMO 24.11s vars=514
+05:43:23 INFO E5 v2.0 por defecto S13A presolve=True: OPTIMO 0.81s vars=201
+05:43:24 INFO E5 v2.0 por defecto S13A presolve=False: OPTIMO 0.66s vars=201
+05:43:46 INFO E5 v2.0 por defecto S19A presolve=True: OPTIMO 22.53s vars=535
+05:44:18 INFO E5 v2.0 por defecto S19A presolve=False: OPTIMO 31.27s vars=535
+05:44:22 INFO E5 v2.0 por defecto S08A presolve=True: OPTIMO 4.84s vars=537
+05:44:34 INFO E5 v2.0 por defecto S08A presolve=False: OPTIMO 11.45s vars=537
+05:44:40 INFO E5 v1.4 S06A: ÓPTIMO 4.18s vars=567
+05:44:43 INFO E5 v1.4 S13A: ÓPTIMO 1.41s vars=249
+05:44:48 INFO E5 v1.4 S19A: ÓPTIMO 3.73s vars=588
+05:44:55 INFO E5 v1.4 S08A: ÓPTIMO 4.99s vars=589
+05:44:55 INFO E5 terminado en 154 s
+05:44:55 INFO Experimentos terminados en 2771 s
+07:51:48 INFO E0 pedidos=96 ops=1152 certificado=True tardanza inevitable: 3 pedidos
+07:51:48 INFO E0 terminado en 0 s
+07:51:48 INFO Experimentos terminados en 0 s

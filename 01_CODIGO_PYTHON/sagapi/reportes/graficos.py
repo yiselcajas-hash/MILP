@@ -48,8 +48,11 @@ def _leer(ruta):
 def _guardar(fig, ruta, nota=NOTA):
     ruta = Path(ruta)
     ruta.parent.mkdir(parents=True, exist_ok=True)
-    if nota:
-        fig.text(0.01, 0.005, nota, fontsize=7, color=MUTED, ha="left", va="bottom")
+    if nota:   # la nota va debajo de todo lo dibujado (ejes, rótulos y leyendas), nunca encima
+        fig.canvas.draw()
+        caja = fig.get_tightbbox(fig.canvas.get_renderer())
+        fig.text(caja.x0 / fig.get_figwidth(), caja.y0 / fig.get_figheight() - 0.012, nota, fontsize=7, color=MUTED,
+                 ha="left", va="top")
     fig.savefig(ruta, bbox_inches="tight")
     plt.close(fig)
     return ruta
@@ -124,8 +127,8 @@ def gantt_maquinas(res, etiqueta, h0, h1, ruta, titulo):
     leg = [Patch(color=cfam[f], label=f) for f in fams] + [Patch(color=GRIS, label="tramo interrumpido (parcial)"),
                                                           Patch(facecolor="none", edgecolor=CRITICO, hatch="////",
                                                                 label="unidad indisponible (avería)")]
-    ax.legend(handles=leg, ncol=6, loc="upper left", bbox_to_anchor=(0, -0.12))
-    ax.set_title(titulo, loc="left")
+    ax.legend(handles=leg, ncol=6, loc="lower left", bbox_to_anchor=(0, 1.0))
+    ax.set_title(titulo, loc="left", pad=26)
     return _guardar(fig, ruta)
 
 
@@ -151,9 +154,9 @@ def gantt_pedidos(res, etiqueta, ruta, titulo):
            Line2D([], [], color=BUENO, lw=2.2, label="en proceso — termina a tiempo"),
            Line2D([], [], color=CRITICO, lw=2.2, label="en proceso — termina atrasado"),
            Line2D([], [], color=INK, marker="|", lw=0, markersize=7, label="vencimiento d_j")]
-    ax.legend(handles=leg, ncol=4, loc="upper left", bbox_to_anchor=(0, -0.03 if len(ped) > 50 else -0.1))
+    ax.legend(handles=leg, ncol=4, loc="lower left", bbox_to_anchor=(0, 1.0))
     n_t = int(ped["atrasado"].sum())
-    ax.set_title(f"{titulo} — {len(ped) - n_t} a tiempo, {n_t} atrasados", loc="left")
+    ax.set_title(f"{titulo} — {len(ped) - n_t} a tiempo, {n_t} atrasados", loc="left", pad=24)
     return _guardar(fig, ruta)
 
 
@@ -244,9 +247,9 @@ def e1_otd(res, ruta):
                       [c for c in combos if c in piv.columns], COLOR, etiquetas=True, fmt="{:.0f}")
     ax.set_ylim(0, 105)
     ax.set_ylabel("pedidos entregados a tiempo (%)")
-    ax.legend(ncol=5, loc="upper left", bbox_to_anchor=(0, -0.1))
-    ax.set_title("OTD por combinación: S00 sin averías y S20A con 12 averías de la plegadora "
-                 "(S00 no tiene reacción: solo se muestra CONV)", loc="left")
+    ax.legend(ncol=5, loc="lower left", bbox_to_anchor=(0, 1.0))
+    ax.set_title("OTD por combinación: S00 sin averías y S20A con 12 averías de la plegadora\n"
+                 "(en S00 la reacción no interviene: FIFO+MILP ≡ FIFO+CONV y MILP+MILP ≡ MILP+CONV)", loc="left", pad=24)
     return _guardar(fig, ruta)
 
 
@@ -255,6 +258,7 @@ def evolucion_tardanza(res, ruta, escenario="S20A"):
     cal = _dias(res)
     fig, ax = plt.subplots(figsize=(11, 4.6))
     hmax = 0
+    finales = []
     for c in ORDEN:
         df = _leer(base / f"pedidos_{escenario}_{c.replace('+', '_')}.csv")
         if df is None:
@@ -262,12 +266,20 @@ def evolucion_tardanza(res, ruta, escenario="S20A"):
         df = df.sort_values("fin_h")
         y = (df["w"] * df["tardanza_h"]).cumsum()
         ax.step(df["fin_h"], y, where="post", color=COLOR[c], linewidth=2, label=c)
-        ax.annotate(f"{c}: {y.iloc[-1]:.0f}", (df["fin_h"].iloc[-1], y.iloc[-1]), xytext=(4, 0),
-                    textcoords="offset points", fontsize=7.5, color=INK2, va="center")
+        finales.append([float(y.iloc[-1]), float(df["fin_h"].iloc[-1]), c])
         hmax = max(hmax, df["fin_h"].max())
     if hmax == 0:
         plt.close(fig)
         return None
+    # rótulos finales sin superposición: separación mínima del 4 % del rango vertical
+    finales.sort()
+    sep = 0.04 * max(f[0] for f in finales)
+    pos = []
+    for v, x, c in finales:
+        pos.append(max(v, pos[-1] + sep) if pos else v)
+    for (v, x, c), yp in zip(finales, pos):
+        ax.annotate(f"{c}: {v:.0f}", (x, v), xytext=(x + 6, yp), textcoords="data", fontsize=7.5, color=INK2,
+                    va="center", annotation_clip=False)
     _eje_fechas(ax, cal, 0, hmax, paso_dias=21)
     ax.set_ylabel("Σ w·T acumulada (h ponderadas)")
     ax.legend(ncol=5, loc="upper left")
@@ -296,6 +308,7 @@ def distribucion_tardanza(res, ruta, escenario="S20A"):
                     ha="center", fontsize=7, color=INK2)
     ax.set_xticks(range(len(nombres)))
     ax.set_xticklabels(nombres)
+    ax.set_ylim(bottom=-2, top=max(float(np.max(v)) for v in datos) * 1.15 + 1)
     ax.set_ylabel("tardanza por pedido T_j (h productivas)")
     ax.set_title(f"Distribución de la tardanza por pedido ({escenario}; cada punto es un pedido, línea = mediana)",
                  loc="left")
@@ -358,7 +371,7 @@ def e3(res, ruta):
         _barras_agrupadas(ax, df, "escenario", "combinacion", c, combos, COLOR)
         ax.set_title(t, loc="left")
     axs[1].set_xticklabels(list(dict.fromkeys(df["escenario"])), rotation=30, ha="right")
-    axs[0].legend(ncol=3, loc="upper left")
+    axs[0].legend(ncol=3, loc="lower right", bbox_to_anchor=(1, 1.0))
     fig.suptitle("E3 · escenarios operativos SIMULADOS (27_ESCENARIOS_OPERATIVOS_SIM)", x=0.01, ha="left",
                  fontweight="bold", color=INK)
     fig.tight_layout()
@@ -467,9 +480,11 @@ def sensibilidad(res, carpeta):
             _barras_agrupadas(ax, g.assign(nivel=g["nivel"].astype(str)), "nivel", "serie", c, series, cs)
             ax.set_title(t, loc="left", fontsize=9)
             ax.set_xlabel(f"nivel de {factor}")
-        np.atleast_1d(axs)[0].legend(ncol=4, loc="lower left", bbox_to_anchor=(0, 1.1), fontsize=7)
-        fig.suptitle(f"E4 · sensibilidad a {factor}", x=0.01, ha="left", fontweight="bold", color=INK, y=1.12)
         fig.tight_layout()
+        leg = np.atleast_1d(axs)[0].legend(ncol=4, loc="lower left", bbox_to_anchor=(0, 1.1), fontsize=7,
+                                           title=f"E4 · sensibilidad a {factor}",
+                                           title_fontproperties={"weight": "bold", "size": 10})
+        leg._legend_box.align = "left"
         out.append(_guardar(fig, Path(carpeta) / f"sensibilidad_{factor}.png"))
     return out
 

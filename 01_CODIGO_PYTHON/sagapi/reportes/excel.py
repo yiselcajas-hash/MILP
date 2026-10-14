@@ -108,5 +108,5 @@ def libro_resultados(resultados, ruta, log=print):
     ws.column_dimensions["A"].width = 120
     Path(ruta).parent.mkdir(parents=True, exist_ok=True)
     wb.save(ruta)
-    log(f"Libro de resultados: {ruta} ({len(presentes)} hojas de datos)")
+    log(f"Libro de resultados: {Path(ruta).name} ({len(presentes)} hojas de datos)")
     return ruta

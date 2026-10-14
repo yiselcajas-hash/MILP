@@ -9,7 +9,6 @@ RAIZ = Path(__file__).resolve().parents[1]
 CODIGO = RAIZ / "01_CODIGO_PYTHON"
 sys.path.insert(0, str(CODIGO))
 BASE = RAIZ / "02_BASE_DATOS" / "SAGAPI_BASE_CORREGIDA_FINAL.xlsx"
-HIST = RAIZ / "historial" / "etapa1_auditoria_v2_0"
 
 
 @pytest.fixture(scope="session")

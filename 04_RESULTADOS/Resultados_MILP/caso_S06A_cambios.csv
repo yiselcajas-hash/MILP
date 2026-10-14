@@ -1,0 +1,220 @@
+metodo,pedido,operacion,maquina_anterior,maquina_propuesta,inicio_anterior_h,inicio_propuesto_h,cambio_h,duracion_pendiente_h,factores_observables
+CONV,P057,P057-11,ARM-01,ARM-01,1306.537874,1306.537874,0,13.2,sin modificación detectada
+CONV,P057,P057-12,CAL-01,CAL-01,1319.737874,1319.737874,0,0.903,sin modificación detectada
+CONV,P057,P057-13,EMP-01,EMP-01,1320.640874,1320.640874,0,1.215,sin modificación detectada
+CONV,P058,P058-02,CPR-01,CPR-01,1312.823,1312.823,0,12.4,sin modificación detectada
+CONV,P058,P058-03,PER-01,PER-01,1325.223,1325.223,0,19.49,sin modificación detectada
+CONV,P058,P058-04,PLE-01,PLE-01,1344.713,1344.713,0,16.5,recurso anterior indisponible en el instante de decisión
+CONV,P058,P058-05,SOL-01,SOL-01,1361.213,1361.213,0,18.626667,sin modificación detectada
+CONV,P058,P058-06,DES-01,DES-01,1379.839667,1379.839667,0,11.65,sin modificación detectada
+CONV,P058,P058-07,PRE-01,PRE-01,1391.489667,1391.489667,0,7.6816,sin modificación detectada
+CONV,P058,P058-08,PIN-01,PIN-01,1399.171267,1399.171267,0,2.271333,sin modificación detectada
+CONV,P058,P058-09,HOR-01,HOR-01,1401.4426,1401.4426,0,1.5,sin modificación detectada
+CONV,P058,P058-10,MAN-01,MAN-01,1402.9426,1402.9426,0,0.894333,sin modificación detectada
+CONV,P058,P058-11,ARM-01,ARM-01,1403.836933,1403.836933,0,14.725,sin modificación detectada
+CONV,P058,P058-12,CAL-01,CAL-01,1418.561933,1418.561933,0,0.967333,sin modificación detectada
+CONV,P058,P058-13,EMP-01,EMP-01,1419.529266,1419.529266,0,1.303333,sin modificación detectada
+CONV,P059,P059-07,PIN-01,PIN-01,1307.762361,1307.762361,0,1.234667,sin modificación detectada
+CONV,P059,P059-08,HOR-01,HOR-01,1308.997028,1308.997028,0,0.75,sin modificación detectada
+CONV,P059,P059-09,MAN-01,MAN-01,1309.747028,1309.747028,0,0.484,sin modificación detectada
+CONV,P059,P059-10,ARM-01,ARM-01,1319.737874,1319.737874,0,9.3,sin modificación detectada
+CONV,P059,P059-11,CAL-01,CAL-01,1329.037874,1329.037874,0,0.538667,sin modificación detectada
+CONV,P059,P059-12,EMP-01,EMP-01,1329.576541,1329.576541,0,0.724,sin modificación detectada
+CONV,P060,P060-01,CCH-01,CCH-01,1312.823,1312.823,0,7.73,sin modificación detectada
+CONV,P060,P060-02,CPR-01,CPR-01,1325.223,1325.223,0,0.970667,sin modificación detectada
+CONV,P060,P060-03,PER-01,PER-01,1344.713,1344.713,0,9.1,sin modificación detectada
+CONV,P060,P060-04,PLE-01,PLE-01,1361.213,1361.213,0,16.733333,recurso anterior indisponible en el instante de decisión
+CONV,P060,P060-05,SOL-01,SOL-01,1379.839667,1379.839667,0,0.913333,sin modificación detectada
+CONV,P060,P060-06,DES-01,DES-01,1391.489667,1391.489667,0,4.45,sin modificación detectada
+CONV,P060,P060-07,PRE-01,PRE-01,1399.171267,1399.171267,0,3.709493,sin modificación detectada
+CONV,P060,P060-08,PIN-01,PIN-01,1402.88076,1402.88076,0,1.178667,sin modificación detectada
+CONV,P060,P060-09,HOR-01,HOR-01,1404.059427,1404.059427,0,0.75,sin modificación detectada
+CONV,P060,P060-10,MAN-01,MAN-01,1404.809427,1404.809427,0,0.472,sin modificación detectada
+CONV,P060,P060-11,ARM-01,ARM-01,1418.561933,1418.561933,0,6.6,sin modificación detectada
+CONV,P060,P060-12,CAL-01,CAL-01,1425.161933,1425.161933,0,0.522667,sin modificación detectada
+CONV,P060,P060-13,EMP-01,EMP-01,1425.6846,1425.6846,0,0.7,sin modificación detectada
+CONV,P061,P061-05,PRE-01,PRE-01,1307.762361,1307.762361,0,2.7324,sin modificación detectada
+CONV,P061,P061-06,PIN-01,PIN-01,1310.494761,1310.494761,0,0.883,sin modificación detectada
+CONV,P061,P061-07,HOR-01,HOR-01,1312,1312,0,0.75,sin modificación detectada
+CONV,P061,P061-08,MAN-01,MAN-01,1312.75,1312.75,0,0.375333,sin modificación detectada
+CONV,P061,P061-09,ARM-01,ARM-01,1329.037874,1329.037874,0,4.3,sin modificación detectada
+CONV,P061,P061-10,CAL-01,CAL-01,1333.337874,1333.337874,0,0.385333,sin modificación detectada
+CONV,P061,P061-11,EMP-01,EMP-01,1333.723207,1333.723207,0,0.511333,sin modificación detectada
+CONV,P062,P062-01,CCH-01,CCH-01,1320.553,1320.553,0,6.799667,sin modificación detectada
+CONV,P062,P062-02,PER-01,PER-01,1353.813,1353.813,0,3.316667,sin modificación detectada
+CONV,P062,P062-03,PLE-01,PLE-01,1377.946333,1377.946333,0,17.583333,recurso anterior indisponible en el instante de decisión
+CONV,P062,P062-04,DES-01,DES-01,1395.939667,1395.939667,0,3.025,sin modificación detectada
+CONV,P062,P062-05,PRE-01,PRE-01,1402.88076,1402.88076,0,4.478267,sin modificación detectada
+CONV,P062,P062-06,PIN-01,PIN-01,1407.359027,1407.359027,0,0.996833,sin modificación detectada
+CONV,P062,P062-07,HOR-01,HOR-01,1408.35586,1408.35586,0,0.75,sin modificación detectada
+CONV,P062,P062-08,MAN-01,MAN-01,1409.10586,1409.10586,0,0.415667,sin modificación detectada
+CONV,P062,P062-09,ARM-01,ARM-01,1425.161933,1425.161933,0,6.6625,sin modificación detectada
+CONV,P062,P062-10,CAL-01,CAL-01,1431.824433,1431.824433,0,0.444,sin modificación detectada
+CONV,P062,P062-11,EMP-01,EMP-01,1432.268433,1432.268433,0,0.591,sin modificación detectada
+CONV,P063,P063-03,PLE-01,PLE-01,1305.823667,1310.240333,4.416666,16.133333,operación interrumpida en el evento; recurso anterior indisponible en el instante de decisión; inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-04,DES-01,DES-01,1321.990334,1326.373666,4.383332,2.85,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-05,PRE-01,PRE-01,1324.840334,1329.223666,4.383332,4.913867,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-06,PIN-01,PIN-01,1329.754201,1334.137533,4.383332,1.606333,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-07,HOR-01,HOR-01,1332,1336,4,1.5,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-08,MAN-01,MAN-01,1333.5,1337.5,4,0.699333,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-09,ARM-01,ARM-01,1334.199333,1338.199333,4,5.15,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-10,CAL-01,CAL-01,1339.349333,1343.349333,4,0.699167,inicio desplazado por restricciones del nuevo programa
+CONV,P063,P063-11,EMP-01,EMP-01,1340.0485,1344.0485,4,0.922833,inicio desplazado por restricciones del nuevo programa
+CONV,P064,P064-01,CCH-01,CCH-01,1327.352667,1327.352667,0,7.450667,sin modificación detectada
+CONV,P064,P064-02,CPR-01,CPR-01,1334.803334,1334.803334,0,6.722667,sin modificación detectada
+CONV,P064,P064-03,PER-01,PER-01,1357.129667,1357.129667,0,11.293333,sin modificación detectada
+CONV,P064,P064-04,PLE-01,PLE-01,1395.529666,1395.529666,0,17.4,recurso anterior indisponible en el instante de decisión
+CONV,P064,P064-05,DES-01,DES-01,1412.929666,1412.929666,0,7.6,sin modificación detectada
+CONV,P064,P064-06,PRE-01,PRE-01,1420.529666,1420.529666,0,5.09504,sin modificación detectada
+CONV,P064,P064-07,PIN-01,PIN-01,1425.624706,1425.624706,0,1.716,sin modificación detectada
+CONV,P064,P064-08,HOR-01,HOR-01,1428,1428,0,1.5,sin modificación detectada
+CONV,P064,P064-09,MAN-01,MAN-01,1429.5,1429.5,0,0.738667,sin modificación detectada
+CONV,P064,P064-10,ARM-01,ARM-01,1431.824433,1431.824433,0,12.5,sin modificación detectada
+CONV,P064,P064-11,CAL-01,CAL-01,1444.324433,1444.324433,0,0.756667,sin modificación detectada
+CONV,P064,P064-12,EMP-01,EMP-01,1445.0811,1445.0811,0,1.000667,sin modificación detectada
+EDD,P057,P057-11,ARM-01,ARM-01,1306.537874,1343.349333,36.811459,13.2,inicio desplazado por restricciones del nuevo programa
+EDD,P057,P057-12,CAL-01,CAL-01,1319.737874,1356.549333,36.811459,0.903,inicio desplazado por restricciones del nuevo programa
+EDD,P057,P057-13,EMP-01,EMP-01,1320.640874,1357.452333,36.811459,1.215,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-02,CPR-01,CPR-01,1312.823,1328.323334,15.500334,12.4,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-03,PER-01,PER-01,1325.223,1340.723334,15.500334,19.49,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-04,PLE-01,PLE-01,1344.713,1378.090332,33.377332,16.5,recurso anterior indisponible en el instante de decisión; inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-05,SOL-01,SOL-01,1361.213,1394.590332,33.377332,18.626667,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-06,DES-01,DES-01,1379.839667,1413.216999,33.377332,11.65,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-07,PRE-01,PRE-01,1391.489667,1424.866999,33.377332,7.6816,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-08,PIN-01,PIN-01,1399.171267,1432.548599,33.377332,2.271333,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-09,HOR-01,HOR-01,1401.4426,1436,34.5574,1.5,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-10,MAN-01,MAN-01,1402.9426,1437.5,34.5574,0.894333,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-11,ARM-01,ARM-01,1403.836933,1438.394333,34.5574,14.725,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-12,CAL-01,CAL-01,1418.561933,1453.119333,34.5574,0.967333,inicio desplazado por restricciones del nuevo programa
+EDD,P058,P058-13,EMP-01,EMP-01,1419.529266,1454.086666,34.5574,1.303333,inicio desplazado por restricciones del nuevo programa
+EDD,P059,P059-07,PIN-01,PIN-01,1307.762361,1311.377761,3.6154,1.234667,inicio desplazado por restricciones del nuevo programa
+EDD,P059,P059-08,HOR-01,HOR-01,1308.997028,1312.75,3.752972,0.75,inicio desplazado por restricciones del nuevo programa
+EDD,P059,P059-09,MAN-01,MAN-01,1309.747028,1313.5,3.752972,0.484,inicio desplazado por restricciones del nuevo programa
+EDD,P059,P059-10,ARM-01,ARM-01,1319.737874,1317.425333,-2.312541,9.3,operación adelantada por reordenación
+EDD,P059,P059-11,CAL-01,CAL-01,1329.037874,1326.725333,-2.312541,0.538667,operación adelantada por reordenación
+EDD,P059,P059-12,EMP-01,EMP-01,1329.576541,1327.264,-2.312541,0.724,operación adelantada por reordenación
+EDD,P060,P060-01,CCH-01,CCH-01,1312.823,1319.622667,6.799667,7.73,inicio desplazado por restricciones del nuevo programa
+EDD,P060,P060-02,CPR-01,CPR-01,1325.223,1327.352667,2.129667,0.970667,inicio desplazado por restricciones del nuevo programa
+EDD,P060,P060-03,PER-01,PER-01,1344.713,1328.323334,-16.389666,9.1,operación adelantada por reordenación
+EDD,P060,P060-04,PLE-01,PLE-01,1361.213,1343.956999,-17.256001,16.733333,recurso anterior indisponible en el instante de decisión; operación adelantada por reordenación
+EDD,P060,P060-05,SOL-01,SOL-01,1379.839667,1360.690332,-19.149335,0.913333,operación adelantada por reordenación
+EDD,P060,P060-06,DES-01,DES-01,1391.489667,1361.603665,-29.886002,4.45,operación adelantada por reordenación
+EDD,P060,P060-07,PRE-01,PRE-01,1399.171267,1366.053665,-33.117602,3.709493,operación adelantada por reordenación
+EDD,P060,P060-08,PIN-01,PIN-01,1402.88076,1369.763158,-33.117602,1.178667,operación adelantada por reordenación
+EDD,P060,P060-09,HOR-01,HOR-01,1404.059427,1370.941825,-33.117602,0.75,operación adelantada por reordenación
+EDD,P060,P060-10,MAN-01,MAN-01,1404.809427,1371.691825,-33.117602,0.472,operación adelantada por reordenación
+EDD,P060,P060-11,ARM-01,ARM-01,1418.561933,1372.163825,-46.398108,6.6,operación adelantada por reordenación
+EDD,P060,P060-12,CAL-01,CAL-01,1425.161933,1378.763825,-46.398108,0.522667,operación adelantada por reordenación
+EDD,P060,P060-13,EMP-01,EMP-01,1425.6846,1379.286492,-46.398108,0.7,operación adelantada por reordenación
+EDD,P061,P061-05,PRE-01,PRE-01,1307.762361,1307.762361,0,2.7324,sin modificación detectada
+EDD,P061,P061-06,PIN-01,PIN-01,1310.494761,1310.494761,0,0.883,sin modificación detectada
+EDD,P061,P061-07,HOR-01,HOR-01,1312,1312,0,0.75,sin modificación detectada
+EDD,P061,P061-08,MAN-01,MAN-01,1312.75,1312.75,0,0.375333,sin modificación detectada
+EDD,P061,P061-09,ARM-01,ARM-01,1329.037874,1313.125333,-15.912541,4.3,operación adelantada por reordenación
+EDD,P061,P061-10,CAL-01,CAL-01,1333.337874,1317.425333,-15.912541,0.385333,operación adelantada por reordenación
+EDD,P061,P061-11,EMP-01,EMP-01,1333.723207,1317.810666,-15.912541,0.511333,operación adelantada por reordenación
+EDD,P062,P062-01,CCH-01,CCH-01,1320.553,1312.823,-7.73,6.799667,operación adelantada por reordenación
+EDD,P062,P062-02,PER-01,PER-01,1353.813,1319.622667,-34.190333,3.316667,operación adelantada por reordenación
+EDD,P062,P062-03,PLE-01,PLE-01,1377.946333,1326.373666,-51.572667,17.583333,recurso anterior indisponible en el instante de decisión; operación adelantada por reordenación
+EDD,P062,P062-04,DES-01,DES-01,1395.939667,1343.956999,-51.982668,3.025,operación adelantada por reordenación
+EDD,P062,P062-05,PRE-01,PRE-01,1402.88076,1346.981999,-55.898761,4.478267,operación adelantada por reordenación
+EDD,P062,P062-06,PIN-01,PIN-01,1407.359027,1351.460266,-55.898761,0.996833,operación adelantada por reordenación
+EDD,P062,P062-07,HOR-01,HOR-01,1408.35586,1352.457099,-55.898761,0.75,operación adelantada por reordenación
+EDD,P062,P062-08,MAN-01,MAN-01,1409.10586,1353.207099,-55.898761,0.415667,operación adelantada por reordenación
+EDD,P062,P062-09,ARM-01,ARM-01,1425.161933,1356.549333,-68.6126,6.6625,operación adelantada por reordenación
+EDD,P062,P062-10,CAL-01,CAL-01,1431.824433,1363.211833,-68.6126,0.444,operación adelantada por reordenación
+EDD,P062,P062-11,EMP-01,EMP-01,1432.268433,1363.655833,-68.6126,0.591,operación adelantada por reordenación
+EDD,P063,P063-03,PLE-01,PLE-01,1305.823667,1310.240333,4.416666,16.133333,operación interrumpida en el evento; recurso anterior indisponible en el instante de decisión; inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-04,DES-01,DES-01,1321.990334,1326.373666,4.383332,2.85,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-05,PRE-01,PRE-01,1324.840334,1329.223666,4.383332,4.913867,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-06,PIN-01,PIN-01,1329.754201,1334.137533,4.383332,1.606333,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-07,HOR-01,HOR-01,1332,1336,4,1.5,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-08,MAN-01,MAN-01,1333.5,1337.5,4,0.699333,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-09,ARM-01,ARM-01,1334.199333,1338.199333,4,5.15,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-10,CAL-01,CAL-01,1339.349333,1343.349333,4,0.699167,inicio desplazado por restricciones del nuevo programa
+EDD,P063,P063-11,EMP-01,EMP-01,1340.0485,1344.0485,4,0.922833,inicio desplazado por restricciones del nuevo programa
+EDD,P064,P064-01,CCH-01,CCH-01,1327.352667,1327.352667,0,7.450667,sin modificación detectada
+EDD,P064,P064-02,CPR-01,CPR-01,1334.803334,1340.723334,5.92,6.722667,inicio desplazado por restricciones del nuevo programa
+EDD,P064,P064-03,PER-01,PER-02,1357.129667,1347.446001,-9.683666,12.422667,reasignación a recurso elegible; operación adelantada por reordenación
+EDD,P064,P064-04,PLE-01,PLE-01,1395.529666,1360.690332,-34.839334,17.4,recurso anterior indisponible en el instante de decisión; operación adelantada por reordenación
+EDD,P064,P064-05,DES-01,DES-01,1412.929666,1378.090332,-34.839334,7.6,operación adelantada por reordenación
+EDD,P064,P064-06,PRE-01,PRE-01,1420.529666,1385.690332,-34.839334,5.09504,operación adelantada por reordenación
+EDD,P064,P064-07,PIN-01,PIN-01,1425.624706,1390.785372,-34.839334,1.716,operación adelantada por reordenación
+EDD,P064,P064-08,HOR-01,HOR-01,1428,1392.501372,-35.498628,1.5,operación adelantada por reordenación
+EDD,P064,P064-09,MAN-01,MAN-01,1429.5,1394.001372,-35.498628,0.738667,operación adelantada por reordenación
+EDD,P064,P064-10,ARM-01,ARM-01,1431.824433,1394.740039,-37.084394,12.5,operación adelantada por reordenación
+EDD,P064,P064-11,CAL-01,CAL-01,1444.324433,1407.240039,-37.084394,0.756667,operación adelantada por reordenación
+EDD,P064,P064-12,EMP-01,EMP-01,1445.0811,1407.996706,-37.084394,1.000667,operación adelantada por reordenación
+MILP,P057,P057-11,ARM-01,ARM-01,1306.537874,1306.537874,0,13.2,sin modificación detectada
+MILP,P057,P057-12,CAL-01,CAL-01,1319.737874,1319.737874,0,0.903,sin modificación detectada
+MILP,P057,P057-13,EMP-01,EMP-01,1320.640874,1320.640874,0,1.215,sin modificación detectada
+MILP,P058,P058-02,CPR-01,CPR-01,1312.823,1312.823,0,12.4,sin modificación detectada
+MILP,P058,P058-03,PER-01,PER-01,1325.223,1325.223,0,19.49,sin modificación detectada
+MILP,P058,P058-04,PLE-01,PLE-01,1344.713,1344.713,0,16.5,recurso anterior indisponible en el instante de decisión
+MILP,P058,P058-05,SOL-01,SOL-01,1361.213,1361.213,0,18.626667,sin modificación detectada
+MILP,P058,P058-06,DES-01,DES-01,1379.839667,1386.213,6.373333,11.65,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-07,PRE-01,PRE-01,1391.489667,1397.863,6.373333,7.6816,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-08,PIN-01,PIN-01,1399.171267,1405.5446,6.373333,2.271333,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-09,HOR-01,HOR-01,1401.4426,1408,6.5574,1.5,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-10,MAN-01,MAN-01,1402.9426,1409.5,6.5574,0.894333,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-11,ARM-01,ARM-01,1403.836933,1410.394333,6.5574,14.725,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-12,CAL-01,CAL-01,1418.561933,1425.119333,6.5574,0.967333,inicio desplazado por restricciones del nuevo programa
+MILP,P058,P058-13,EMP-01,EMP-01,1419.529266,1426.086666,6.5574,1.303333,inicio desplazado por restricciones del nuevo programa
+MILP,P059,P059-07,PIN-01,PIN-01,1307.762361,1307.762361,0,1.234667,sin modificación detectada
+MILP,P059,P059-08,HOR-01,HOR-01,1308.997028,1308.997028,0,0.75,sin modificación detectada
+MILP,P059,P059-09,MAN-01,MAN-01,1309.747028,1309.747028,0,0.484,sin modificación detectada
+MILP,P059,P059-10,ARM-01,ARM-01,1319.737874,1324.037874,4.3,9.3,inicio desplazado por restricciones del nuevo programa
+MILP,P059,P059-11,CAL-01,CAL-01,1329.037874,1333.337874,4.3,0.538667,inicio desplazado por restricciones del nuevo programa
+MILP,P059,P059-12,EMP-01,EMP-01,1329.576541,1333.876541,4.3,0.724,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-01,CCH-01,CCH-01,1312.823,1319.622667,6.799667,7.73,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-02,CPR-01,CPR-01,1325.223,1327.352667,2.129667,0.970667,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-03,PER-01,PER-02,1344.713,1344.713,0,10.01,reasignación a recurso elegible
+MILP,P060,P060-04,PLE-01,PLE-01,1361.213,1378.613,17.4,16.733333,recurso anterior indisponible en el instante de decisión; inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-05,SOL-01,SOL-01,1379.839667,1395.346333,15.506666,0.913333,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-06,DES-01,DES-01,1391.489667,1397.863,6.373333,4.45,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-07,PRE-01,PRE-01,1399.171267,1405.5446,6.373333,3.709493,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-08,PIN-01,PIN-01,1402.88076,1409.254093,6.373333,1.178667,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-09,HOR-01,HOR-01,1404.059427,1410.43276,6.373333,0.75,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-10,MAN-01,MAN-01,1404.809427,1411.18276,6.373333,0.472,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-11,ARM-01,ARM-01,1418.561933,1425.119333,6.5574,6.6,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-12,CAL-01,CAL-01,1425.161933,1431.719333,6.5574,0.522667,inicio desplazado por restricciones del nuevo programa
+MILP,P060,P060-13,EMP-01,EMP-01,1425.6846,1432.242,6.5574,0.7,inicio desplazado por restricciones del nuevo programa
+MILP,P061,P061-05,PRE-01,PRE-01,1307.762361,1307.762361,0,2.7324,sin modificación detectada
+MILP,P061,P061-06,PIN-01,PIN-01,1310.494761,1310.494761,0,0.883,sin modificación detectada
+MILP,P061,P061-07,HOR-01,HOR-01,1312,1312,0,0.75,sin modificación detectada
+MILP,P061,P061-08,MAN-01,MAN-01,1312.75,1312.75,0,0.375333,sin modificación detectada
+MILP,P061,P061-09,ARM-01,ARM-01,1329.037874,1319.737874,-9.3,4.3,operación adelantada por reordenación
+MILP,P061,P061-10,CAL-01,CAL-01,1333.337874,1324.037874,-9.3,0.385333,operación adelantada por reordenación
+MILP,P061,P061-11,EMP-01,EMP-01,1333.723207,1324.423207,-9.3,0.511333,operación adelantada por reordenación
+MILP,P062,P062-01,CCH-01,CCH-01,1320.553,1312.823,-7.73,6.799667,operación adelantada por reordenación
+MILP,P062,P062-02,PER-01,PER-01,1353.813,1321.906333,-31.906667,3.316667,operación adelantada por reordenación
+MILP,P062,P062-03,PLE-01,PLE-01,1377.946333,1327.129667,-50.816666,17.583333,recurso anterior indisponible en el instante de decisión; operación adelantada por reordenación
+MILP,P062,P062-04,DES-01,DES-01,1395.939667,1366.636733,-29.302934,3.025,operación adelantada por reordenación
+MILP,P062,P062-05,PRE-01,PRE-01,1402.88076,1369.661733,-33.219027,4.478267,operación adelantada por reordenación
+MILP,P062,P062-06,PIN-01,PIN-01,1407.359027,1374.14,-33.219027,0.996833,operación adelantada por reordenación
+MILP,P062,P062-07,HOR-01,HOR-01,1408.35586,1375.136833,-33.219027,0.75,operación adelantada por reordenación
+MILP,P062,P062-08,MAN-01,MAN-01,1409.10586,1375.886833,-33.219027,0.415667,operación adelantada por reordenación
+MILP,P062,P062-09,ARM-01,ARM-01,1425.161933,1376.3025,-48.859433,6.6625,operación adelantada por reordenación
+MILP,P062,P062-10,CAL-01,CAL-01,1431.824433,1382.965,-48.859433,0.444,operación adelantada por reordenación
+MILP,P062,P062-11,EMP-01,EMP-01,1432.268433,1383.409,-48.859433,0.591,operación adelantada por reordenación
+MILP,P063,P063-03,PLE-01,PLE-01,1305.823667,1310.240333,4.416666,16.133333,operación interrumpida en el evento; recurso anterior indisponible en el instante de decisión; inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-04,DES-01,DES-01,1321.990334,1326.373666,4.383332,2.85,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-05,PRE-01,PRE-01,1324.840334,1329.223666,4.383332,4.913867,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-06,PIN-01,PIN-01,1329.754201,1334.137533,4.383332,1.606333,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-07,HOR-01,HOR-01,1332,1336,4,1.5,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-08,MAN-01,MAN-01,1333.5,1337.5,4,0.699333,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-09,ARM-01,ARM-01,1334.199333,1338.199333,4,5.15,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-10,CAL-01,CAL-01,1339.349333,1343.349333,4,0.699167,inicio desplazado por restricciones del nuevo programa
+MILP,P063,P063-11,EMP-01,EMP-01,1340.0485,1344.0485,4,0.922833,inicio desplazado por restricciones del nuevo programa
+MILP,P064,P064-01,CCH-01,CCH-01,1327.352667,1327.352667,0,7.450667,sin modificación detectada
+MILP,P064,P064-02,CPR-01,CPR-01,1334.803334,1334.803334,0,6.722667,sin modificación detectada
+MILP,P064,P064-03,PER-01,PER-01,1357.129667,1349.919667,-7.21,11.293333,operación adelantada por reordenación
+MILP,P064,P064-04,PLE-01,PLE-01,1395.529666,1361.213,-34.316666,17.4,recurso anterior indisponible en el instante de decisión; operación adelantada por reordenación
+MILP,P064,P064-05,DES-01,DES-01,1412.929666,1378.613,-34.316666,7.6,operación adelantada por reordenación
+MILP,P064,P064-06,PRE-01,PRE-01,1420.529666,1386.213179,-34.316487,5.09504,operación adelantada por reordenación
+MILP,P064,P064-07,PIN-01,PIN-01,1425.624706,1391.308219,-34.316487,1.716,operación adelantada por reordenación
+MILP,P064,P064-08,HOR-01,HOR-01,1428,1393.024219,-34.975781,1.5,operación adelantada por reordenación
+MILP,P064,P064-09,MAN-01,MAN-01,1429.5,1394.524219,-34.975781,0.738667,operación adelantada por reordenación
+MILP,P064,P064-10,ARM-01,ARM-01,1431.824433,1395.262886,-36.561547,12.5,operación adelantada por reordenación
+MILP,P064,P064-11,CAL-01,CAL-01,1444.324433,1407.762886,-36.561547,0.756667,operación adelantada por reordenación
+MILP,P064,P064-12,EMP-01,EMP-01,1445.0811,1408.519553,-36.561547,1.000667,operación adelantada por reordenación

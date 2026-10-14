@@ -41,6 +41,7 @@ def convertir(nombre):
     with tempfile.TemporaryDirectory() as tmp:
         html = os.path.join(FUENTES, f".{nombre}.html")
         subprocess.run(["pandoc", md, "-s", "-o", html, "--mathml", "--toc", "--toc-depth=2", "--css", "estilo.css",
+                        "--embed-resources",
                         "--metadata", "toc-title=Contenido", "--resource-path", f"{FUENTES}:{RAIZ}"],
                        check=True, cwd=FUENTES)
         pdf = os.path.join(tmp, nombre + ".pdf")

@@ -6,7 +6,7 @@ lang: es
 
 # 1. Requisitos
 
-* Python 3.11, 3.12 o 3.13 (probado en 3.13 y, en un entorno limpio, en 3.11).
+* Python 3.12 o 3.13 (probado en 3.13 y, en un entorno limpio creado desde el ZIP, en 3.12). Python 3.11 no sirve: numpy 2.5.3 no tiene paquetes para esa versión.
 * Paquetes con versiones exactas en `01_CODIGO_PYTHON/requirements.txt`: numpy, scipy (incluye HiGHS), pandas, openpyxl, matplotlib y pytest. No se usa ningún solucionador comercial ni ninguna API privada.
 * Solo para regenerar los PDF: pandoc y Chromium (`herramientas/generar_pdfs.py`). Solo para recalcular las fórmulas del Excel: LibreOffice.
 

@@ -1,0 +1,92 @@
+{
+ "version": "2.0.0",
+ "highs": "HiGHS vía scipy.optimize.milp (SciPy 1.18.1)",
+ "base": "SAGAPI_BASE_CORREGIDA_FINAL.xlsx",
+ "calidad": {
+  "errores": 0,
+  "advertencias": 46,
+  "info": 3,
+  "por_codigo": {
+   "ADVERTENCIA:Q10": 43,
+   "ADVERTENCIA:Q16": 3,
+   "INFO:Q17": 3
+  }
+ },
+ "procedencia": {
+  "pedidos": "SIMULADO",
+  "habilidades": "SIMULADO",
+  "fallas": "SIMULADO",
+  "tiempos_ruta": "ESTIMADO"
+ },
+ "pedidos": 96,
+ "operaciones": 1152,
+ "unidades": 15,
+ "regla_continuidad": "TRAMO",
+ "L_segmento_h": 4.0,
+ "horas_productivas_horizonte": 2264.0,
+ "dias_productivos": 283,
+ "regla_objetivo": "TARDANZA_PONDERADA",
+ "beta": 8.0,
+ "horizonte_congelado_h": 0.0,
+ "certificado_personal": {
+  "ok": true,
+  "demanda": 15,
+  "cubierto": 15,
+  "deficit": {},
+  "equipos": {
+   "ARM-01": [
+    "OP-09"
+   ],
+   "CAL-01": [
+    "OP-10"
+   ],
+   "CCH-01": [
+    "OP-01"
+   ],
+   "CPR-01": [
+    "OP-02"
+   ],
+   "DES-01": [
+    "OP-05"
+   ],
+   "EMP-01": [
+    "OP-11"
+   ],
+   "HOR-01": [
+    "OP-14"
+   ],
+   "MAN-01": [
+    "OP-15"
+   ],
+   "PER-01": [
+    "OP-03"
+   ],
+   "PER-02": [
+    "OP-12"
+   ],
+   "PIN-01": [
+    "OP-07"
+   ],
+   "PLE-01": [
+    "OP-04"
+   ],
+   "PRE-01": [
+    "OP-08"
+   ],
+   "SOL-01": [
+    "OP-06"
+   ],
+   "SOL-02": [
+    "OP-13"
+   ]
+  },
+  "fuente_habilidades": "SIMULADA"
+ },
+ "trabajadores": 25,
+ "pedidos_con_tardanza_inevitable": 3,
+ "tardanza_inevitable_total_h": 27.52107200000023,
+ "tardanza_inevitable_ponderada": 49.475886322387844,
+ "recurso_mayor_espera_fifo": "PLE-01",
+ "recurso_mayor_utilizacion_fifo": "PLE-01",
+ "maquina_critica_declarada": "PLE-01"
+}

@@ -1,0 +1,16 @@
+unidad,recurso,nombre,carga_teorica_h,utilizacion_fifo_pct,espera_cola_fifo_h,espera_media_fifo_h,operaciones,declarado_critico
+PLE-01,PLE-01,Plegadora hidráulica de chapa metálica,1437.250004,67.979602,1244.560002,12.964167,96,1
+PER-01,PER-01,Taladro de banco para perforación de acero,782.069996,36.990646,1191.129846,12.407603,96,0
+CCH-01,CCH-01,Guillotina hidráulica para corte de planchas de acero,658.536087,31.147692,1075.413851,11.202228,96,0
+ARM-01,ARM-01,Mesa de armado,775.975,36.702363,684.599407,7.131244,96,0
+DES-01,DES-01,Mesa de desbarbado/esmerilado,508.225,24.038221,154.79666,1.612465,96,0
+PRE-01,PRE-01,Zona de preparación superficial,437.39343,20.688002,106.894404,1.113483,96,0
+CPR-01,CPR-01,Sierra de cinta para corte de tubos y perfiles,331.640669,15.686067,48.98625,0.816438,60,0
+SOL-01,SOL-01,Máquina de soldadura por arco MIG/MAG,403.586662,19.088997,17.799996,0.494444,36,0
+HOR-01,HOR-01,Horno de curado de pintura electrostática por lotes,94.5,4.469697,10.504293,0.10942,96,0
+CAL-01,CAL-01,Área de inspección,56.082831,2.652627,0,0,96,0
+EMP-01,EMP-01,Zona de protección y embalaje,74.94701,3.544872,0,0,96,0
+MAN-01,MAN-01,Manipulación y enfriamiento de piezas,52.655175,2.490505,0,0,96,0
+PER-02,PER-02,Segundo taladro (alternativo),0,0,0,0,0,0
+PIN-01,PIN-01,Pistola manual de pintura electrostática en polvo,128.860838,6.094909,0,0,96,0
+SOL-02,SOL-02,Segunda estación soldadura (alternativa),0,0,0,0,0,0

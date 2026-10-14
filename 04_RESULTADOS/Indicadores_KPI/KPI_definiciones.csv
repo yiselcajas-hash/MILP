@@ -1,0 +1,33 @@
+indicador,formula,unidad,definicion,procedencia
+pedidos,|J|,pedidos,Pedidos evaluados (todos deben completarse),SIMULADO (20_PEDIDOS_SIM)
+completados,|{j : C_j definido}|,pedidos,Pedidos con todas sus operaciones programadas,CALCULADO
+atrasados,"Σ_j U_j, U_j = 1[C_j > d_j]",pedidos,Pedidos que terminan después del vencimiento,CALCULADO
+otd_pct,100·(1 − atrasados/pedidos),%,Entregas a tiempo (On-Time Delivery),CALCULADO
+tardanza_total_h,"Σ_j T_j, T_j = max(0, C_j − d_j)",h productivas,Tardanza total,CALCULADO
+tardanza_total_dias,Σ_j T_j / h_dia,días productivos,Tardanza total en días productivos,CALCULADO
+tardanza_ponderada,"Σ_j w_j T_j, w_j = valor_j / valor medio",h ponderadas,Objetivo P1 por defecto,CALCULADO (valor con precio medio por familia: ESTIMADO)
+tardanza_max_h,max_j T_j,h productivas,Mayor tardanza individual,CALCULADO
+tardanza_media_atrasados_h,Σ_j T_j / atrasados,h productivas,Tardanza media de los pedidos atrasados,CALCULADO
+adelanto_medio_h,"Σ_j max(0, d_j − C_j) / |J|",h productivas,Holgura media al entregar,CALCULADO
+flujo_medio_h,Σ_j (C_j − r_j) / |J|,h productivas,Tiempo medio en el sistema desde la liberación,CALCULADO
+makespan_h,max_j C_j,h productivas,Fin de la última operación (desde el inicio del calendario),CALCULADO
+penalidad_estimada,"Σ_j P_j U_j, P_j = frac_familia · valor_j",S/,Penalidad fija contractual estimada,ESTIMADO (fracción de penalidad por familia sin contrato verificado)
+penalidad_diaria_tope,"Σ_j min(a_j T_j / h_dia, tope_j)",S/,Penalidad diaria con tope (sensibilidad),ESTIMADO
+horas_maquina,Σ_o (C_o − S_o) + Σ parciales,h,Horas de proceso ocupadas en unidades,CALCULADO
+horas_reproceso,Σ parciales perdidos (política B) + tiempo extra de recuperación,h,Horas de proceso adicionales por interrupciones,CALCULADO
+utilizacion_media_pct,"100·Σ_m ocupado_m / Σ_m disponible_m (en [0, makespan])",%,Utilización media de las unidades usadas,CALCULADO
+utilizacion_max_pct,max_m 100·ocupado_m / disponible_m,%,Utilización de la unidad más cargada,CALCULADO
+ocio_total_h,Σ_m (disponible_m − ocupado_m),h,"Tiempo ocioso de unidades en [0, makespan]",CALCULADO
+energia_kwh,Σ_o p_o · kW_m · factor_carga_m,kWh,Energía eléctrica de proceso,ESTIMADO (potencias de referencia)
+costo_uso_maquinas,Σ_m ocupado_m · costo_h_m,S/,Costo de uso de recursos,ESTIMADO
+costo_energia,energia_kwh · tarifa,S/,Costo de energía,ESTIMADO (tarifa sin recibo)
+costo_mano_obra_directa,Σ_w horas_w · costo_hora_hombre,S/,Mano de obra aplicada a operaciones,ESTIMADO (sin planilla)
+carga_trabajador_max_h,max_w Σ_{o→w} p_o,h,Mayor carga anual de un trabajador,CALCULADO (habilidades SIMULADAS)
+carga_trabajador_cv,desv. est. / media de las cargas,-,Desequilibrio de carga laboral,CALCULADO (habilidades SIMULADAS)
+tiempo_computo_s,Σ tiempos de los eventos,s,Tiempo de cómputo total (reloj),MEDIDO
+tiempo_solver_s,Σ tiempos de HiGHS,s,Tiempo de cómputo del solucionador,MEDIDO
+brecha_max,max (cota − incumbente)/incumbente,-,Mayor brecha de optimalidad informada por HiGHS,MEDIDO
+eventos_milp,|eventos resueltos con MILP|,eventos,Eventos resueltos con MILP,MEDIDO
+eventos_optimos,|eventos con estado OPTIMO en todas las fases|,eventos,Eventos con óptimo demostrado,MEDIDO
+desviacion_total_h,Σ_eventos Σ_o |S_o − S0_o|,h,Nerviosismo: desplazamiento de inicios planificados,CALCULADO
+reasignaciones,Σ_eventos Σ_o 1[m_o ≠ m0_o],operaciones,Cambios de unidad respecto del plan vigente,CALCULADO

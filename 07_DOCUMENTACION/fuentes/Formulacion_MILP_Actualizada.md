@@ -153,7 +153,7 @@ $|x|=\sum_o|M_o|$; $|y|=|\mathcal P|$; $|z|\le|W|\cdot|O^R|$; $|k|=|O^N\cap O^R|
 
 # 12. Validación matemática
 
-`tests/test_enumeracion.py` compara el MILP con la **enumeración exhaustiva** de todas las asignaciones y secuencias por unidad en 66 microinstancias aleatorias (70 generadas; 4 omitidas por no tener operaciones libres o por superar 7 operaciones): 2 jerarquías, recurso de 2 unidades, operaciones R12, averías actuales y simultáneas, ventanas futuras, políticas A y B y programación inicial. P1 y P2 se comparan con programas semiactivos (dominantes para objetivos regulares). P3 se compara mediante un PL de tiempos por asignación, secuencia y patrón de atraso, en los casos sin ventanas futuras ni R12. Todas las comparaciones coinciden (ver `06_AUDITORIA_Y_VALIDACION/Reporte_Pruebas`).
+`tests/test_enumeracion.py` compara el MILP con la **enumeración exhaustiva** de todas las asignaciones y secuencias por unidad en 66 microinstancias aleatorias (70 generadas; 4 de programación inicial omitidas por tener más de 7 operaciones, demasiadas para enumerar): 2 jerarquías, recurso de 2 unidades, operaciones R12, averías actuales y simultáneas, ventanas futuras, políticas A y B y programación inicial. P1 y P2 se comparan con programas semiactivos (dominantes para objetivos regulares). P3 se compara mediante un PL de tiempos por asignación, secuencia y patrón de atraso, en los casos sin ventanas futuras ni R12. Todas las comparaciones coinciden (ver `06_AUDITORIA_Y_VALIDACION/Reporte_Pruebas`).
 
 # 13. Limitaciones de la formulación
 
